@@ -10,32 +10,32 @@ orange-eeg documentation!
    :maxdepth: 2
    :caption: Contents:
 
- Widgets
- -------
+Widgets
+-------
 
- .. toctree::
-    :maxdepth: 1
+.. toctree::
+  :maxdepth: 1
 
-    widgets/yahoo_finance
-    widgets/DiscreteWaveletTransformation
-    widgets/interpolate
-    widgets/aggregate
-    widgets/difference
-    widgets/seasonal_adjustment
-    widgets/moving_transform
-    widgets/correlogram
-    widgets/periodogram
-    widgets/line_chart
-    widgets/spiralogram
-    widgets/arima
-    widgets/var
-    widgets/model_evaluation
-    widgets/granger_causality
+  widgets/yahoo_finance
+  widgets/DiscreteWaveletTransformation
+  widgets/interpolate
+  widgets/aggregate
+  widgets/difference
+  widgets/seasonal_adjustment
+  widgets/moving_transform
+  widgets/correlogram
+  widgets/periodogram
+  widgets/line_chart
+  widgets/spiralogram
+  widgets/arima
+  widgets/var
+  widgets/model_evaluation
+  widgets/granger_causality
 
-  .. alternative ordering:
-     :glob:
+.. alternative ordering:
+   :glob:
 
-     widgets/*
+   widgets/*
 
 Indices and tables
 ------------------
