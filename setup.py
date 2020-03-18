@@ -25,16 +25,16 @@ PACKAGE_DATA = {
 
 INSTALL_REQUIRES = [
 	'Orange3',
-	'mne==0.17.1', 'AnyQt', 'PyQt5', 'numpy', 'pylsl', 'pywt'
+	'mne==0.17.1', 'AnyQt', 'PyQt5', 'numpy', 'pylsl', 'PyWavelets'
 ]
 
 ENTRY_POINTS = {
 	# TODO: do we want it to be shown in the add-ons manager?
 	# Entry points that marks this package as an orange add-on. If set, addon will
 	# be shown in the add-ons manager even if not published on PyPi.
-	# 'orange3.addon': (
-	# 	'EEG = EEG',
-	# ),
+	 'orange3.addon': (
+	 	'eeg = orangecontrib.eeg',
+	 ),
 	# Entry point used to specify packages containing tutorials accessible
 	# from welcome screen. Tutorials are saved Orange Workflows (.ows files).
 	# 'orange.widgets.tutorials': (
@@ -46,11 +46,16 @@ ENTRY_POINTS = {
 	'orange.widgets': (
 		# Widget category specification can be seen in
 		#    orangecontrib/example/widgets/__init__.py
-		'EEG = EEG.widgets',
+		'EEG = orangecontrib.eeg.widgets',
 	),
+
+	# Widget help
+    "orange.canvas.help": (
+        'html-index = orangecontrib.eeg.widgets:WIDGET_HELP_PATH',
+    )
 }
 
-NAMESPACE_PACKAGES = ["EEG"]
+NAMESPACE_PACKAGES = ["orangecontrib"]
 
 # TODO: tests?
 # TEST_SUITE = "EEG.tests.suite"
@@ -77,7 +82,8 @@ if __name__ == '__main__':
 		version=VERSION,
 		description=DESCRIPTION,
 		long_description=LONG_DESCRIPTION,
-		packages=PACKAGES,
+		url='https://github.com/Iopi/orange-EEG',
+		packages=find_packages(),
 		package_data=PACKAGE_DATA,
 		install_requires=INSTALL_REQUIRES,
 		entry_points=ENTRY_POINTS,
