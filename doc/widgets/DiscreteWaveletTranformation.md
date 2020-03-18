@@ -1,5 +1,5 @@
-Discrete Wavelet Transformation (DWT)
-=========
+Discrete wavelet tranformation
+==============================
 
 short description
 

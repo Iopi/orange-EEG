@@ -20,7 +20,7 @@ Widgets
    widgets/baselinecorrection
    widgets/brainvisionimporter
    widgets/CSP
-   widgets/DiscreteWaveletTransformation
+   widgets/DiscreteWaveletTranformation
    widgets/eegmarker
    widgets/eegplot
    widgets/epochextraction
