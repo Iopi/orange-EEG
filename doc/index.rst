@@ -32,6 +32,11 @@ orange-eeg documentation!
     widgets/model_evaluation
     widgets/granger_causality
 
+  .. alternative ordering:
+     :glob:
+
+     widgets/*
+
 Indices and tables
 ------------------
 
