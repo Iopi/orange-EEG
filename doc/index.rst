@@ -14,23 +14,26 @@ Widgets
 -------
 
 .. toctree::
-  :maxdepth: 1
+   :maxdepth: 1
 
-  widgets/yahoo_finance
-  widgets/DiscreteWaveletTransformation
-  widgets/interpolate
-  widgets/aggregate
-  widgets/difference
-  widgets/seasonal_adjustment
-  widgets/moving_transform
-  widgets/correlogram
-  widgets/periodogram
-  widgets/line_chart
-  widgets/spiralogram
-  widgets/arima
-  widgets/var
-  widgets/model_evaluation
-  widgets/granger_causality
+   widgets/averaging
+   widgets/baselinecorrection
+   widgets/brainvisionimporter
+   widgets/CSP
+   widgets/DiscreteWaveletTransformation
+   widgets/eegmarker
+   widgets/eegplot
+   widgets/epochextraction
+   widgets/EpochsToTable
+   widgets/Filter
+   widgets/channelselector
+   widgets/ICA
+   widgets/LDA
+   widgets/lsldatareceiver
+   widgets/PlotWelchPSD
+   widgets/Resample
+   widgets/SVC
+   widgets/WelchPSD
 
 .. alternative ordering:
    :glob:
