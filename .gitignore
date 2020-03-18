@@ -1,0 +1,4 @@
+.idea
+*.pyc
+EEG.egg-info
+EEG/data/*
