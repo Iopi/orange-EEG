@@ -4,7 +4,7 @@
 BACKGROUND = "blue"
 
 # Location of widget help files.
-WIDGET_HELP_PATH = (
+intersphinxdef = (
     # root in development mode
      ("{DEVELOP_ROOT}/doc/_build/htmlhelp/index.html", None),
      # URL is taken from PKG-INFO (Home-page)

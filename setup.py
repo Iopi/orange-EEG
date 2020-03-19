@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 # Name of the package
-NAME = "EEG"
-DOCUMENTATION_NAME = 'Orange EEG'
+NAME = "Orange3-Eeg"
+DOCUMENTATION_NAME = 'Orange3 Eeg'
 
 VERSION = "1.0.0"
 
@@ -46,12 +46,12 @@ ENTRY_POINTS = {
 	'orange.widgets': (
 		# Widget category specification can be seen in
 		#    orangecontrib/example/widgets/__init__.py
-		'EEG = orangecontrib.eeg.widgets',
+		'Eeg = orangecontrib.eeg.widgets',
 	),
 
 	# Widget help
     "orange.canvas.help": (
-        'html-index = orangecontrib.eeg.widgets:WIDGET_HELP_PATH',
+        'intersphinx = orangecontrib.eeg.widgets:intersphinxdef',
     )
 }
 

@@ -40,6 +40,15 @@ Widgets
 
    widgets/*
 
+Python Scripting
+----------------
+
+.. toctree::
+   :maxdepth: 2
+     
+   scripting
+   reference
+
 Indices and tables
 ------------------
 

@@ -113,14 +113,14 @@
     "icon": "",
     "background": "blue",
     "keywords": []
-   }
+   },
    {
     "text": "Support Vector Classification",
     "doc": "widgets/SVC.md",
     "icon": "",
     "background": "blue",
     "keywords": []
-   }
+   },
    {
     "text": "Welch PSD",
     "doc": "widgets/WelchPSD.md",
