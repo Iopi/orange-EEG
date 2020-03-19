@@ -18,5 +18,4 @@ png
 1. Interval to aggregate the time series by. Options are: second, minute, hour, day, week, month, or year.
 2. Aggregation function for each of the time series in the table. Discrete variables (sequences) can only be aggregated using mode (i.e. most frequent value), whereas string variables can only be aggregated using string concatenation.
 
-#### See also
 

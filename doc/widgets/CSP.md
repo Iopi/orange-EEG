@@ -1,5 +1,5 @@
-Name of widget
-==============
+Common Spatial Patterns
+=======================
 short description
 
 

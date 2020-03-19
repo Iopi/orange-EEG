@@ -1,5 +1,5 @@
-Name of widget
-==============
+BrainVision Importer
+====================
 short description
 
 
