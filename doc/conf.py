@@ -21,7 +21,7 @@ sys.path.insert(0, join(dirname(dirname(__file__)), 'orangecontrib', 'eeg'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'orange-EEG'
+project = 'Orange3-Eeg'
 copyright = '2020, Pavel Průcha'
 author = 'Pavel Průcha'
 

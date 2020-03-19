@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 # Name of the package
 NAME = "Orange3-Eeg"
-DOCUMENTATION_NAME = 'Orange3 Eeg'
+DOCUMENTATION_NAME = 'Orange3-Eeg'
 
 VERSION = "1.0.0"
 
@@ -18,10 +18,6 @@ KEYWORDS = (
 )
 
 PACKAGES = find_packages()
-
-PACKAGE_DATA = {
-	# TODO: icons, maybe some tutorials
-}
 
 INSTALL_REQUIRES = [
 	'Orange3',
@@ -82,9 +78,18 @@ if __name__ == '__main__':
 		version=VERSION,
 		description=DESCRIPTION,
 		long_description=LONG_DESCRIPTION,
-		url='https://github.com/Iopi/orange-EEG',
+		url='https://github.com/Iopi/orange3-eeg',
 		packages=find_packages(),
-		package_data=PACKAGE_DATA,
+		package_data={
+            "orangecontrib.timeseries.widgets": ["icons/*.svg",
+                                                 "*.js"],
+            "orangecontrib.timeseries.widgets.highcharts": ["_highcharts/*.js",
+                                                            "_highcharts/*.html",
+                                                            "_highcharts/*.css",
+                                                            "_highcharts/LICENSE"],
+            "orangecontrib.timeseries": ["datasets/*.tab",
+                                         "datasets/*.csv"],
+        },
 		install_requires=INSTALL_REQUIRES,
 		entry_points=ENTRY_POINTS,
 		keywords=KEYWORDS,

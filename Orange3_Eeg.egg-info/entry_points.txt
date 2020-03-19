@@ -1,0 +1,9 @@
+[orange.canvas.help]
+intersphinx = orangecontrib.eeg.widgets:intersphinxdef
+
+[orange.widgets]
+Eeg = orangecontrib.eeg.widgets
+
+[orange3.addon]
+eeg = orangecontrib.eeg
+

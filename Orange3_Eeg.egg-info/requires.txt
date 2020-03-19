@@ -1,0 +1,7 @@
+Orange3
+mne==0.17.1
+AnyQt
+PyQt5
+numpy
+pylsl
+PyWavelets
