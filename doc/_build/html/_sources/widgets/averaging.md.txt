@@ -1,0 +1,15 @@
+Averaging
+==============
+short description
+
+
+**Inputs**
+
+-
+-
+
+**Outputs**
+
+
+Example
+-------

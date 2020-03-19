@@ -14,7 +14,7 @@
     <param name="Local" value="index.html">
 </OBJECT>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="Averaging">
     <param name="Local" value="widgets/averaging.html">
 </OBJECT>
 <UL>
@@ -58,7 +58,7 @@
     <param name="Local" value="widgets/DiscreteWaveletTranformation.html">
 </OBJECT>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="EEG Marker">
     <param name="Local" value="widgets/eegmarker.html">
 </OBJECT>
 <UL>
@@ -68,7 +68,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="EEG Plot">
     <param name="Local" value="widgets/eegplot.html">
 </OBJECT>
 <UL>
@@ -78,7 +78,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="Epoch Extraction">
     <param name="Local" value="widgets/epochextraction.html">
 </OBJECT>
 <UL>
@@ -88,7 +88,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="Epochs to Table">
     <param name="Local" value="widgets/EpochsToTable.html">
 </OBJECT>
 <UL>
@@ -98,7 +98,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="Filter">
     <param name="Local" value="widgets/Filter.html">
 </OBJECT>
 <UL>
@@ -108,7 +108,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="Channel Selector">
     <param name="Local" value="widgets/channelselector.html">
 </OBJECT>
 <UL>
@@ -118,7 +118,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="Independent Component Analysis">
     <param name="Local" value="widgets/ICA.html">
 </OBJECT>
 <UL>
@@ -128,7 +128,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="Linear Discriminant Analysis">
     <param name="Local" value="widgets/LDA.html">
 </OBJECT>
 <UL>
@@ -138,7 +138,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="LSL Data Receiver">
     <param name="Local" value="widgets/lsldatareceiver.html">
 </OBJECT>
 <UL>
@@ -148,7 +148,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="PlotWelchPSD">
     <param name="Local" value="widgets/PlotWelchPSD.html">
 </OBJECT>
 <UL>
@@ -158,7 +158,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="Resample">
     <param name="Local" value="widgets/Resample.html">
 </OBJECT>
 <UL>
@@ -168,7 +168,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="Support Vector Classification">
     <param name="Local" value="widgets/SVC.html">
 </OBJECT>
 <UL>
@@ -178,7 +178,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="Welch PSD">
     <param name="Local" value="widgets/WelchPSD.html">
 </OBJECT>
 <UL>

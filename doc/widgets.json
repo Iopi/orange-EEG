@@ -1,0 +1,133 @@
+[
+ [
+  "Eeg",
+  [
+   {
+    "text": "Averaging",
+    "doc": "widgets/averaging.md",
+    "icon": "../orangecontrib/eeg/widgets/icon/icon_owaveraging.svg",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Baseline correction",
+    "doc": "widgets/baselinecorrection.md",
+    "icon": "../orangecontrib/eeg/widgets/icon/icon_owbaseline.svg",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Brainvision importer",
+    "doc": "widgets/brainvisionimporter.md",
+    "icon": "../orangecontrib/eeg/widgets/icon/icon_owbrainvisionimporter.svg",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Common Spatial Patterns",
+    "doc": "widgets/CSP.md",
+    "icon": "",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Discrete Wavelet Tranformation",
+    "doc": "widgets/DiscreteWaveletTranformation.md",
+    "icon": "",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Eeg marker",
+    "doc": "widgets/eegmarker.md",
+    "icon": "../orangecontrib/eeg/widgets/icon/icon_marker.svg",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Eeg plot",
+    "doc": "widgets/eegplot.md",
+    "icon": "../orangecontrib/eeg/widgets/icon/icon_owplot.svg",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Epoch extraction",
+    "doc": "widgets/epochextraction.md",
+    "icon": "../orangecontrib/eeg/widgets/icon/icon_epochextraction.svg",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Epochs To Table",
+    "doc": "widgets/EpochsToTable.md",
+    "icon": "",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Filter",
+    "doc": "widgets/Filter.md",
+    "icon": "",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "channel selector",
+    "doc": "widgets/channelselector.md",
+    "icon": "../orangecontrib/eeg/widgets/icon/icon_owchannelselector.svg",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Independent Component Analysis",
+    "doc": "widgets/ICA.md",
+    "icon": "",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Linear Discriminant Analysis",
+    "doc": "widgets/LDA.md",
+    "icon": "",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "lsl data receiver",
+    "doc": "widgets/lsldatareceiver.md",
+    "icon": "../orangecontrib/eeg/widgets/icon/icon_datareceiver.svg",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Plot Welch PSD",
+    "doc": "widgets/PlotWelchPSD.md",
+    "icon": "",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Resample",
+    "doc": "widgets/Resample.md",
+    "icon": "",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Support Vector Classification",
+    "doc": "widgets/SVC.md",
+    "icon": "",
+    "background": "blue",
+    "keywords": []
+   },
+   {
+    "text": "Welch PSD",
+    "doc": "widgets/WelchPSD.md",
+    "icon": "",
+    "background": "blue",
+    "keywords": []
+   }
+  ]
+ ]
+]

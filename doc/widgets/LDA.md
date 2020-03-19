@@ -1,5 +1,5 @@
-Name of widget
-==============
+Linear Discriminant Analysis
+============================
 short description
 
 

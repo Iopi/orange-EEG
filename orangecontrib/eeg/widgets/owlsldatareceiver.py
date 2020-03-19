@@ -11,7 +11,7 @@ from mne.io import RawArray
 from pylsl import StreamInlet
 from pylsl import resolve_byprop
 
-from EEGWorkflow.utils import style
+from orangecontrib.eeg.utils import style
 
 
 class OWLSLDataReceiver(OWWidget):

@@ -1,5 +1,5 @@
-Name of widget
-==============
+LSL Data Receiver
+=================
 short description
 
 

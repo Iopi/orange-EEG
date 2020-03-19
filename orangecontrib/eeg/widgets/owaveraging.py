@@ -7,7 +7,7 @@ from Orange.widgets.utils.signals import Input, Output
 from Orange.widgets.utils.widgetpreview import WidgetPreview
 from Orange.widgets.widget import OWWidget, Msg
 
-from EEG.widgets.oweegmarker import EEGMarker
+from orangecontrib.eeg.widgets.oweegmarker import EEGMarker
 
 
 class OWAveraging(OWWidget):
@@ -32,10 +32,10 @@ class OWAveraging(OWWidget):
 	def __init__(self):
 		super().__init__()
 		if __name__ == "__main__":
-			from EEGWorkflow.widgets.owbaselinecorrection import OWBaselineCorrection
-			from EEGWorkflow.widgets.owlsldatareceiver import OWLSLDataReceiver
-			from EEGWorkflow.widgets.owchannelselector import OWChannelSelector
-			from EEGWorkflow.widgets.owepochextraction import OWEpochExtraction
+			from orangecontrib.eeg.widgets.owbaselinecorrection import OWBaselineCorrection
+			from orangecontrib.eeg.widgets.owlsldatareceiver import OWLSLDataReceiver
+			from orangecontrib.eeg.widgets.owchannelselector import OWChannelSelector
+			from orangecontrib.eeg.widgets.owepochextraction import OWEpochExtraction
 			# selector = OWChannelSelector()
 			# selector.set_input_data(
 			# 	mne.io.read_raw_brainvision("../data/LED_28_06_2012_104.vhdr", preload=True, stim_channel=True))

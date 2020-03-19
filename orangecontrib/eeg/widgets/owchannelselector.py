@@ -7,7 +7,7 @@ from PyQt5.QtCore import Qt, QSize
 from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QGridLayout, QHBoxLayout, QPushButton, QLabel, QSizePolicy
 
-from EEGWorkflow.utils import style
+from orangecontrib.eeg.utils import style
 
 
 class OWChannelSelector(OWWidget):

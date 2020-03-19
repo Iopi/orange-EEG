@@ -6,7 +6,7 @@ from PyQt5.QtCore import Qt, QSize
 from PyQt5.QtWidgets import QPushButton, QGridLayout, QFileDialog, QLabel, QVBoxLayout
 from PyQt5.QtWidgets import QSizePolicy as Policy
 from PyQt5.QtGui import QFont
-from EEGWorkflow.utils import style
+from orangecontrib.eeg.utils import style
 
 
 class OWBrainVisionImporter(OWWidget):

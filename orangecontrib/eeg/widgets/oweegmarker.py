@@ -5,7 +5,7 @@ from Orange.widgets.widget import OWWidget, Msg
 from PyQt5.QtCore import Qt, QSize
 from PyQt5.QtWidgets import QLineEdit, QLabel, QHBoxLayout, QVBoxLayout, QPushButton
 
-from EEGWorkflow.utils import style
+from orangecontrib.eeg.utils import style
 
 
 class EEGMarker:

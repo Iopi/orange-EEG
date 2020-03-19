@@ -1,5 +1,5 @@
-Name of widget
-==============
+EEG Plot
+========
 short description
 
 

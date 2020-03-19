@@ -6,7 +6,7 @@ from Orange.widgets.widget import OWWidget, Input, Msg
 from PyQt5.QtCore import QSize
 from PyQt5.QtWidgets import QGridLayout, QPushButton
 
-from EEGWorkflow.utils import style
+from orangecontrib.eeg.utils import style
 
 
 class OWEEGPlot(OWWidget):

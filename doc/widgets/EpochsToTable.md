@@ -1,5 +1,5 @@
-Name of widget
-==============
+Epochs to Table
+===============
 short description
 
 

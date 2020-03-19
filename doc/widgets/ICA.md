@@ -1,5 +1,5 @@
-Name of widget
-==============
+Independent Component Analysis
+==============================
 short description
 
 

@@ -1,5 +1,5 @@
-Name of widget
-==============
+Channel Selector
+================
 short description
 
 
