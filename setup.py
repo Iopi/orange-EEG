@@ -47,7 +47,7 @@ ENTRY_POINTS = {
 
 	# Widget help
     "orange.canvas.help": (
-        'intersphinx = orangecontrib.eeg.widgets:intersphinxdef',
+        'html-index = orangecontrib.eeg.widgets:WIDGET_HELP_PATH',
     )
 }
 
@@ -81,13 +81,13 @@ if __name__ == '__main__':
 		url='https://github.com/Iopi/orange3-eeg',
 		packages=find_packages(),
 		package_data={
-            "orangecontrib.timeseries.widgets": ["icons/*.svg",
+            "orangecontrib.eeg.widgets": ["icons/*.svg",
                                                  "*.js"],
-            "orangecontrib.timeseries.widgets.highcharts": ["_highcharts/*.js",
+            "orangecontrib.eeg.widgets.highcharts": ["_highcharts/*.js",
                                                             "_highcharts/*.html",
                                                             "_highcharts/*.css",
                                                             "_highcharts/LICENSE"],
-            "orangecontrib.timeseries": ["datasets/*.tab",
+            "orangecontrib.eeg": ["datasets/*.tab",
                                          "datasets/*.csv"],
         },
 		install_requires=INSTALL_REQUIRES,
