@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="next" title="Name of widget" href="eegmarker.html" />
-    <link rel="prev" title="Name of widget" href="CSP.html" /> 
+    <link rel="next" title="EEG Marker" href="eegmarker.html" />
+    <link rel="prev" title="Common Spatial Patterns" href="CSP.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -20,10 +20,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="eegmarker.html" title="Name of widget"
+          <a href="eegmarker.html" title="EEG Marker"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="CSP.html" title="Name of widget"
+          <a href="CSP.html" title="Common Spatial Patterns"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>
@@ -35,22 +35,24 @@
             
   <div class="section" id="discrete-wavelet-tranformation">
 <h1>Discrete wavelet tranformation</h1>
-<p>short description</p>
+<p>Transformation derived from wavelet transform for discrete wavelets. Computes approximation and deail coefficient.</p>
 <p><strong>Inputs</strong></p>
 <ul class="simple">
-<li>Time series: Time series as output by <strong>As Timeseries</strong> widget.</li>
+<li>[Epochs][1]: Data for transformation</li>
 </ul>
 <p><strong>Outputs</strong></p>
 <ul class="simple">
-<li>Time series: Aggregated time series.</li>
+<li>[Epochs][1]: Approximation coefficient</li>
+<li>[Epochs][1]: Detail coefficient</li>
 </ul>
-<p><strong>Aggregate</strong> joins together instances at the same level of granularity. In other words, if aggregating by day, all instances from the same day will be merged into one. Aggregation function can be defined separately based on the type of the attribute.</p>
-<p>png</p>
+<p>[1]: (<a class="reference external" href="https://mne.tools/dev/generated/mne.Epochs.html" target="_blank">https://mne.tools/dev/generated/mne.Epochs.html</a>)</p>
+<p>![](images/dwt1.png)</p>
+<p><strong>Atributes</strong></p>
 <ol class="arabic simple">
-<li>Interval to aggregate the time series by. Options are: second, minute, hour, day, week, month, or year.</li>
-<li>Aggregation function for each of the time series in the table. Discrete variables (sequences) can only be aggregated using mode (i.e. most frequent value), whereas string variables can only be aggregated using string concatenation.</li>
+<li>Wavelet family - wawelet to use</li>
+<li>Number of degrees of transformation</li>
 </ol>
-<p>#### See also</p>
+<p>More about DWT and example [here](<a class="reference external" href="https://pywavelets.readthedocs.io/en/latest/ref/dwt-discrete-wavelet-transform.html" target="_blank">https://pywavelets.readthedocs.io/en/latest/ref/dwt-discrete-wavelet-transform.html</a>) .</p>
 </div>
 
 
@@ -65,10 +67,10 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="eegmarker.html" title="Name of widget"
+          <a href="eegmarker.html" title="EEG Marker"
              >next</a> |</li>
         <li class="right" >
-          <a href="CSP.html" title="Name of widget"
+          <a href="CSP.html" title="Common Spatial Patterns"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>

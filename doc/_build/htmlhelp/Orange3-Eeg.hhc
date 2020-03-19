@@ -34,7 +34,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="BrainVision Importer">
     <param name="Local" value="widgets/brainvisionimporter.html">
 </OBJECT>
 <UL>
@@ -44,7 +44,7 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Name of widget">
+    <param name="Name" value="Common Spatial Patterns">
     <param name="Local" value="widgets/CSP.html">
 </OBJECT>
 <UL>

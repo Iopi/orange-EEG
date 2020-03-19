@@ -1,21 +1,25 @@
 Discrete wavelet tranformation
 ==============================
 
-short description
+Transformation derived from wavelet transform for discrete wavelets. Computes approximation and deail coefficient.
 
 **Inputs**
 
-- Time series: Time series as output by **As Timeseries** widget.
+- [Epochs][1]: Data for transformation
 
 **Outputs**
 
-- Time series: Aggregated time series.
+- [Epochs][1]: Approximation coefficient
+- [Epochs][1]: Detail coefficient
 
-**Aggregate** joins together instances at the same level of granularity. In other words, if aggregating by day, all instances from the same day will be merged into one. Aggregation function can be defined separately based on the type of the attribute.
-
-png
-
-1. Interval to aggregate the time series by. Options are: second, minute, hour, day, week, month, or year.
-2. Aggregation function for each of the time series in the table. Discrete variables (sequences) can only be aggregated using mode (i.e. most frequent value), whereas string variables can only be aggregated using string concatenation.
+[1]: (https://mne.tools/dev/generated/mne.Epochs.html)
 
 
+![](images/dwt1.png)
+
+**Atributes**
+
+1. Wavelet family - wawelet to use
+2. Number of degrees of transformation
+
+More about DWT and example [here](https://pywavelets.readthedocs.io/en/latest/ref/dwt-discrete-wavelet-transform.html) .
