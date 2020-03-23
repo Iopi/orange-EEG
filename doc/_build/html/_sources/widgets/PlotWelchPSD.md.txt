@@ -1,5 +1,5 @@
-Name of widget
-==============
+PlotWelchPSD
+============
 short description
 
 

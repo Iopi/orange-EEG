@@ -1,5 +1,5 @@
-Name of widget
-==============
+Resample
+========
 short description
 
 

@@ -1,5 +1,5 @@
-Name of widget
-==============
+Support Vector Classification
+=============================
 short description
 
 

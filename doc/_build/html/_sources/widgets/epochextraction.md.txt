@@ -1,5 +1,5 @@
-Name of widget
-==============
+Epoch Extraction
+================
 short description
 
 

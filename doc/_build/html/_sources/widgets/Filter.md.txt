@@ -1,5 +1,5 @@
-Name of widget
-==============
+Filter
+======
 short description
 
 
