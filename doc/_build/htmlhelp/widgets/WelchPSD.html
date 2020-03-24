@@ -31,13 +31,39 @@
             
   <div class="section" id="welch-psd">
 <h1>Welch PSD</h1>
-<p>short description</p>
-<p><strong>Inputs</strong>
--
--</p>
+<p>Compute the power spectral density (PSD) using Welch’s method.</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw" target="_blank">Raw</a></li>
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html" target="_blank">Epochs</a></li>
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html" target="_blank">Evoked</a></li>
+</ul>
 <p><strong>Outputs</strong></p>
+<ul class="simple">
+<li>(psds, freqs)<ul>
+<li>psds - The power spectral densities.</li>
+<li>freqs - The frequencies.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/welch1.png" src="../_images/welch1.png" /></p>
+<ol class="simple">
+<li>Start frequency to consider - Min frequency of interest</li>
+<li>End frequency to consider - Max frequency of interest</li>
+<li>Start time to consider - Min time of interest</li>
+<li>End time to consider - Max time of interest</li>
+<li>Number of points to use in Welch FFT calculations</li>
+</ol>
 <div class="section" id="example">
 <h2>Example</h2>
+<p><img alt="../_images/exa8work.png" src="../_images/exa8work.png" /></p>
+<p><img alt="../_images/exa8plot.png" src="../_images/exa8plot.png" /></p>
+<p>More information <a class="reference external" href="https://mne.tools/0.17/generated/mne.time_frequency.psd_welch.html" target="_blank">here</a>.</p>
+<div class="section" id="related-widgets">
+<h3>Related widgets</h3>
+<p><a class="reference internal" href="PlotWelchPSD.html"><span class="doc">Plot Welsch PSD</span></a></p>
+</div>
 </div>
 </div>
 

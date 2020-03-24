@@ -35,13 +35,31 @@
             
   <div class="section" id="filter">
 <h1>Filter</h1>
-<p>short description</p>
-<p><strong>Inputs</strong>
--
--</p>
+<p>Filter a subset of channels.</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw" target="_blank">Raw</a></li>
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html" target="_blank">Epochs</a></li>
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html" target="_blank">Evoked</a></li>
+</ul>
 <p><strong>Outputs</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw" target="_blank">Raw</a>: Filtered Raw</li>
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html" target="_blank">Epochs</a>: Filtered Epochs</li>
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html" target="_blank">Evoked</a>: Filtered Evoked</li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/fil1.png" src="../_images/fil1.png" /></p>
+<ol class="simple">
+<li>The lower pass-band edge - Low cut-off frequency in Hz.</li>
+<li>The upper pass-band edge - High cut-off frequency in Hz.</li>
+</ol>
 <div class="section" id="example">
 <h2>Example</h2>
+<p><img alt="../_images/exa5work.png" src="../_images/exa5work.png" /></p>
+<p>More information filter in Raw <a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw.filter" target="_blank">here</a>.
+More information filter in Epochs <a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html#mne.Epochs.filter" target="_blank">here</a>.
+More information filter in Evoked <a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html#mne.Evoked.filter" target="_blank">here</a>.</p>
 </div>
 </div>
 

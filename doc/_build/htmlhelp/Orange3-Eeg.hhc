@@ -22,6 +22,12 @@
     <param name="Name" value="Example">
     <param name="Local" value="widgets/averaging.html#example">
 </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Related widgets">
+    <param name="Local" value="widgets/averaging.html#related-widgets">
+</OBJECT>
+</UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Baseline Correction">
@@ -67,23 +73,21 @@
 </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/eegmarker.html#inputs">
-</OBJECT>
-<LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/eegmarker.html#example">
 </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Related widgets">
+    <param name="Local" value="widgets/eegmarker.html#related-widgets">
+</OBJECT>
+</UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="EEG Plot">
     <param name="Local" value="widgets/eegplot.html">
 </OBJECT>
 <UL>
-<LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/eegplot.html#inputs">
-</OBJECT>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/eegplot.html#example">
@@ -95,10 +99,6 @@
 </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/epochextraction.html#inputs">
-</OBJECT>
-<LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/epochextraction.html#example">
 </OBJECT>
@@ -108,10 +108,6 @@
     <param name="Local" value="widgets/EpochsToTable.html">
 </OBJECT>
 <UL>
-<LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/EpochsToTable.html#inputs">
-</OBJECT>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/EpochsToTable.html#example">
@@ -123,10 +119,6 @@
 </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/Filter.html#inputs">
-</OBJECT>
-<LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/Filter.html#example">
 </OBJECT>
@@ -136,10 +128,6 @@
     <param name="Local" value="widgets/channelselector.html">
 </OBJECT>
 <UL>
-<LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/channelselector.html#inputs">
-</OBJECT>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/channelselector.html#example">
@@ -151,13 +139,15 @@
 </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/ICA.html#inputs">
-</OBJECT>
-<LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/ICA.html#example">
 </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Related widgets">
+    <param name="Local" value="widgets/ICA.html#related-widgets">
+</OBJECT>
+</UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Linear Discriminant Analysis">
@@ -179,13 +169,25 @@
 </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/lsldatareceiver.html#inputs">
-</OBJECT>
-<LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/lsldatareceiver.html#example">
 </OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="PlotICA">
+    <param name="Local" value="widgets/PlotICA.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Example">
+    <param name="Local" value="widgets/PlotICA.html#example">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Related widgets">
+    <param name="Local" value="widgets/PlotICA.html#related-widgets">
+</OBJECT>
+</UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="PlotWelchPSD">
@@ -193,23 +195,21 @@
 </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/PlotWelchPSD.html#inputs">
-</OBJECT>
-<LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/PlotWelchPSD.html#example">
 </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Related widgets">
+    <param name="Local" value="widgets/PlotWelchPSD.html#related-widgets">
+</OBJECT>
+</UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Resample">
     <param name="Local" value="widgets/Resample.html">
 </OBJECT>
 <UL>
-<LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/Resample.html#inputs">
-</OBJECT>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/Resample.html#example">
@@ -235,12 +235,14 @@
 </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/WelchPSD.html#inputs">
-</OBJECT>
-<LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/WelchPSD.html#example">
 </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Related widgets">
+    <param name="Local" value="widgets/WelchPSD.html#related-widgets">
+</OBJECT>
+</UL>
 </UL>
 </UL></BODY></HTML>

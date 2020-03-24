@@ -1,5 +1,5 @@
 [orange.canvas.help]
-intersphinx = orangecontrib.eeg.widgets:intersphinxdef
+html-index = orangecontrib.eeg.widgets:WIDGET_HELP_PATH
 
 [orange.widgets]
 Eeg = orangecontrib.eeg.widgets

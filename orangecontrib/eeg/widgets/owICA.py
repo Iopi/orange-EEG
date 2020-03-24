@@ -27,6 +27,7 @@ class OWICA(OWWidget):
 
 	class Inputs:
 		data_epoch = Input("Epoch data", mne.Epochs)
+		data_evoked = Input("Evoked data", mne.Evoked)
 		data_raw = Input("Raw data", mne.io.Raw)
 
 	class Outputs:
@@ -128,6 +129,15 @@ class OWICA(OWWidget):
 	def set_raw(self, raw):
 		"""Initializes and modifies the input data."""
 		self.data = raw
+		if self.data is not None:
+			self.data = self.data.copy()
+			self.makeIca()
+			self.commit()
+
+	@Inputs.data_evoked
+	def set_evoked(self, evoked):
+		"""Initializes and modifies the input data."""
+		self.data = evoked
 		if self.data is not None:
 			self.data = self.data.copy()
 			self.makeIca()

@@ -30,6 +30,7 @@ widgets\EpochsToTable.html
 widgets\Filter.html
 widgets\ICA.html
 widgets\LDA.html
+widgets\PlotICA.html
 widgets\PlotWelchPSD.html
 widgets\Resample.html
 widgets\SVC.html

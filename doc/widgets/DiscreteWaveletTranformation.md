@@ -5,20 +5,20 @@ Transformation derived from wavelet transform for discrete wavelets. Computes ap
 
 **Inputs**
 
-- [Epochs][1]: Data for transformation
+- [Epochs][1]
 
 **Outputs**
 
 - [Epochs][1]: Approximation coefficient
 - [Epochs][1]: Detail coefficient
 
-[1]: https://mne.tools/dev/generated/mne.Epochs.html
+[1]: https://mne.tools/0.17/generated/mne.Epochs.html
 
-**Atributes**
+**Use**
 
 ![](images/dwt1.png)
 
 1. Wavelet family - wawelet to use
 2. Number of degrees of transformation
 
-More about DWT and example [here](https://pywavelets.readthedocs.io/en/latest/ref/dwt-discrete-wavelet-transform.html)
+More information [here](https://pywavelets.readthedocs.io/en/latest/ref/dwt-discrete-wavelet-transform.html)

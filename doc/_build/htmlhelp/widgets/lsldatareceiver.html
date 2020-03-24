@@ -35,13 +35,29 @@
             
   <div class="section" id="lsl-data-receiver">
 <h1>LSL Data Receiver</h1>
-<p>short description</p>
-<p><strong>Inputs</strong>
--
--</p>
+<p>Receives EEG LSL data.</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li>Online data streams</li>
+<li>Online markers stream</li>
+</ul>
 <p><strong>Outputs</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw" target="_blank">Raw</a></li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/lsl1.png" src="../_images/lsl1.png" /></p>
+<ol class="simple">
+<li>Streams settings - settings for data and markers</li>
+<li>Timeout - Optionally a timeout of the operation, in seconds. If the timeout expires, less than the desired number of streams (possibly none) will be returned. (default FOREVER)</li>
+<li>Save stream settings button - saves the <em>Streams settings</em> changes</li>
+<li>Find streams button - Starts with findings streams with data and markers</li>
+<li>Send data button - Sends found data to workflow (as output Raw)</li>
+<li>Stop button - Stop data finding</li>
+</ol>
 <div class="section" id="example">
 <h2>Example</h2>
+<p><img alt="../_images/exa6work.png" src="../_images/exa6work.png" /></p>
 </div>
 </div>
 

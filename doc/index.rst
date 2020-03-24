@@ -25,6 +25,7 @@ Widgets
    widgets/ICA
    widgets/LDA
    widgets/lsldatareceiver
+   widgets/PlotICA
    widgets/PlotWelchPSD
    widgets/Resample
    widgets/SVC

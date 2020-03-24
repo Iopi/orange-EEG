@@ -35,13 +35,33 @@
             
   <div class="section" id="independent-component-analysis">
 <h1>Independent Component Analysis</h1>
-<p>short description</p>
-<p><strong>Inputs</strong>
--
--</p>
+<p>M/EEG signal decomposition using Independent Component Analysis (ICA).</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw" target="_blank">Raw</a></li>
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html" target="_blank">Epochs</a></li>
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html" target="_blank">Evoked</a></li>
+</ul>
 <p><strong>Outputs</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.preprocessing.ICA.html" target="_blank">ICA</a>: Object of Independent Component Analysis</li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/ica1.png" src="../_images/ica1.png" /></p>
+<ol class="simple">
+<li>Number of PCA components - Controls the number of PCA components from the pre-ICA PCA entering the ICA decomposition in the ICA.fit() method</li>
+<li>Random state to initialize ICA estimation for representativ results.</li>
+<li>Maximum number of iterations during fit.</li>
+</ol>
 <div class="section" id="example">
 <h2>Example</h2>
+<p><img alt="../_images/exa5work.png" src="../_images/exa5work.png" /></p>
+<p>More information <a class="reference external" href="https://mne.tools/0.17/generated/mne.preprocessing.ICA.html" target="_blank">here</a>
+and <a class="reference external" href="https://mne.tools/stable/auto_tutorials/preprocessing/plot_40_artifact_correction_ica.html#sphx-glr-auto-tutorials-preprocessing-plot-40-artifact-correction-ica-py" target="_blank">here</a>.</p>
+<div class="section" id="related-widgets">
+<h3>Related widgets</h3>
+<p><a class="reference internal" href="PlotICA.html"><span class="doc">Plot ICA</span></a></p>
+</div>
 </div>
 </div>
 
