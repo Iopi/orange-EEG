@@ -1,8 +1,9 @@
 Orange3-Eeg
 ===========
 
-[![docs](https://img.shields.io/badge/python-passing-green.svg)](https://orange3-eeg.readthedocs.io/en/latest//)
+[![docs](https://img.shields.io/badge/docs-passing-green.svg)](https://orange3-eeg.readthedocs.io/en/latest/)
 [![Python 3.6](https://img.shields.io/badge/python-%3E=3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![Orange3](https://img.shields.io/badge/Orange3-3.23.1-orange.svg)](https://orange.biolab.si/download/#windows)
 [![mne](https://img.shields.io/badge/mne-0.17.1-blueviolet.svg)](https://mne.tools/0.17/install_mne_python.html)
 [![AnyQt](https://img.shields.io/badge/AnyQt--green.svg)](https://pypi.org/project/AnyQt/)
 [![PyQt5](https://img.shields.io/badge/PyQt5--green.svg)](https://pypi.org/project/PyQt5/)
