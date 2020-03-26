@@ -27,16 +27,16 @@ After successfully installing Orange3, you can install the Orange3-Eeg add-on pa
 
 2. Go to main folder of project
 
-    cd orange3-eeg
+        cd orange3-eeg
 
 3. To install the add-on
     * run
     
-        pip install .
+            pip install .
 
     * or if you want keep the code in development directory run
 
-        pip install -e .
+            pip install -e .
     
 this will make it so that Orange recognizes the package, and when changes are made
 to the source code it will recognize them too.
