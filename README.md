@@ -43,6 +43,6 @@ to the source code it will recognize them too.
 
 4. After the installation, Orange should now be tracking the package, simply run
 
-    python -m Orange.canvas
+        python -m Orange.canvas
     
 the EEG category should show in the left menu in the orange application.
