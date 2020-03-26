@@ -17,23 +17,31 @@ Package documentation: https://orange3-eeg.readthedocs.io/en/latest/
 
 ## Instalation
 
+### Install Orange3
 Firstly install Orange3 version 3.23.1. The process can be found here - [Orange3 Download](https://orange.biolab.si/download/#windows).
 
+### Install Orange3-Eeg add-on
 After successfully installing Orange3, you can install the Orange3-Eeg add-on package.
 
-To install the add-on, run
+1. Download this projec from git and extract where you want it to be.
+
+2. Go to main folder of project
+
+    cd orange3-eeg
+
+3. To install the add-on
+    * run
     
-    pip install .
+        pip install .
 
-To install the add-on, but keep the code in development directory, run
+    * or if you want keep the code in development directory run
 
-    pip install -e .
+        pip install -e .
     
 this will make it so that Orange recognizes the package, and when changes are made
 to the source code it will recognize them too.
 
-## Usage
-After the installation, Orange should now be tracking the package, simply run
+4. After the installation, Orange should now be tracking the package, simply run
 
     python -m Orange.canvas
     
