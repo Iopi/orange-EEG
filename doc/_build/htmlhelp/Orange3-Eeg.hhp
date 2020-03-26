@@ -18,6 +18,8 @@ Orange3-Eeg="Orange3-Eeg 1.0.0 documentation","Orange3-Eeg.hhc","Orange3-Eeg.hhk
 [FILES]
 genindex.html
 index.html
+reference.html
+scripting.html
 _static\basic.css
 _static\file.png
 _static\minus.png
