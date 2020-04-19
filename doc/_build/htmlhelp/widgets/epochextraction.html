@@ -35,9 +35,10 @@
             
   <div class="section" id="epoch-extraction">
 <h1>Epoch Extraction</h1>
-<p>Orange widget that extracts specified epochs from an eeg data file.</p>
+<p>Extracts specified epochs from the EEG data.</p>
 <p><strong>Inputs</strong></p>
 <ul class="simple">
+<li>EEGMarker: Markers from widget <a class="reference internal" href="eegmarker.html"><span class="doc">EEGMarker</span></a></li>
 <li><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw" target="_blank">Raw</a></li>
 </ul>
 <p><strong>Outputs</strong></p>
@@ -47,14 +48,19 @@
 <p><strong>Use</strong></p>
 <p><img alt="../_images/etra.png" src="../_images/etra.png" /></p>
 <ol class="simple">
+<li><em>Markers</em> - If markers are added, extracted Epochs will be only Epochs with event-ID of added markers-ID.</li>
 <li>PreStimulus offset - Start time before event.</li>
 <li>PostStimulus offset - End time after event.</li>
 </ol>
 <div class="section" id="example">
 <h2>Example</h2>
 <p><img alt="../_images/exa1work.png" src="../_images/exa1work.png" /></p>
-<p><img alt="../_images/exa1work.png" src="../_images/exa1work.png" /></p>
+<p><img alt="../_images/exa1plot.png" src="../_images/exa1plot.png" /></p>
 <p>More information <a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html" target="_blank">here</a>.</p>
+<div class="section" id="related-widgets">
+<h3>Related widgets</h3>
+<p><a class="reference internal" href="eegmarker.html"><span class="doc">EEG Marker</span></a></p>
+</div>
 </div>
 </div>
 

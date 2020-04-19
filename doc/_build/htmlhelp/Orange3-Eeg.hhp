@@ -26,9 +26,11 @@ _static\minus.png
 _static\nature.css
 _static\plus.png
 _static\pygments.css
+widgets\AveragingTimeWindows.html
 widgets\CSP.html
 widgets\DiscreteWaveletTranformation.html
 widgets\EpochsToTable.html
+widgets\FeatureLabeling.html
 widgets\Filter.html
 widgets\ICA.html
 widgets\LDA.html
@@ -36,6 +38,9 @@ widgets\PlotICA.html
 widgets\PlotWelchPSD.html
 widgets\Resample.html
 widgets\SVC.html
+widgets\Segmentation.html
+widgets\Straighten.html
+widgets\TimeFreqMaps.html
 widgets\WelchPSD.html
 widgets\averaging.html
 widgets\baselinecorrection.html

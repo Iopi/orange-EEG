@@ -12,14 +12,15 @@ Widgets
    :maxdepth: 1
 
    widgets/averaging
+   widgets/AveragingTimeWindows
    widgets/baselinecorrection
    widgets/brainvisionimporter
-   widgets/CSP
    widgets/DiscreteWaveletTranformation
    widgets/eegmarker
    widgets/eegplot
    widgets/epochextraction
    widgets/EpochsToTable
+   widgets/FeatureLabeling
    widgets/Filter
    widgets/channelselector
    widgets/ICA
@@ -28,7 +29,10 @@ Widgets
    widgets/PlotICA
    widgets/PlotWelchPSD
    widgets/Resample
+   widgets/Segmentation
+   widgets/Straighten
    widgets/SVC
+   widgets/TimeFreqMaps
    widgets/WelchPSD
 
 .. alternative ordering:

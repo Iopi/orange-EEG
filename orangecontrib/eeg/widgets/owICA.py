@@ -113,7 +113,7 @@ class OWICA(OWWidget):
 	
 	def makeIca(self):
 		if self.data is not None:
-			self.icaObj = ICA(n_components=self.n_components, random_state=self.random_state, max_iter=self.max_iter)
+			self.icaObj = ICA(n_components=self.n_components, random_state=self.random_state, method='extended-infomax', max_iter=self.max_iter)
 			self.icaObj.fit(self.data)	
 
 	@Inputs.data_epoch

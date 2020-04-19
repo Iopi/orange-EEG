@@ -13,43 +13,68 @@ from orangecontrib.eeg.utils import style
 
 class OWSVC(OWWidget):
 	name = "Support Vector Classification"
-	description = "Set of supervised learning methods used for classification, regression and outliers detection."
+	description = "C-Support Vector Classification."
 
-	#icon = "icons/icon_owaveraging.svg"
+	icon = "icons/icon_svc.svg"
 
 	want_main_area = False
 	resizing_enabled = True
 
 	class Inputs:
-		data_epoch = Input("Epoch data", mne.Epochs)
+		train_data_X = Input("Train data", numpy.ndarray)
+		train_data_y = Input("Train indexes", numpy.ndarray)
+		test_data_X = Input("Target data", numpy.ndarray)
 
 	class Outputs:
-		out_data = Output("SVC", svm.classes.SVC)
+		test_data_y = Output("Target indexes", numpy.ndarray)
 
 	def __init__(self):
 		super().__init__()
+		self.X_train = None
+		self.y_train = None
+		self.X_test = None
 
 	def makeSvc(self):
-		if self.data is not None:
-			X = self.data.get_data()  # MEG signals: n_epochs, n_meg_channels, n_times
-			y = self.data.events[:, 2]  # target: Audio left or right
+		if self.X_train is not None and self.y_train is not None and self.X_test is not None:
+			svcObj = svm.SVC(gamma='auto')
+			print(numpy.shape(self.X_train))
+			print(numpy.shape(self.y_train))
+			print(numpy.shape(self.X_test))
+			print(self.y_train)
+			svcObj.fit(self.X_train, self.y_train)
 
-			self.clp = svm.SVC(gamma='scale')
-			self.clp.fit(X[:,0,:], y)
+			self.y_test = svcObj.predict(self.X_test)
+			print(self.y_test)
+		else:
+			self.y_test = None
 
-
-	@Inputs.data_epoch
-	def set_epoch(self, epoch):
+	@Inputs.train_data_X
+	def set_train_X(self, train_data_X):
 		"""Initializes and modifies the input data."""
-		self.data = epoch
-		if self.data is not None:
-			self.data = self.data.copy()
+		self.X_train = train_data_X
+		if self.X_train is not None and self.y_train is not None and self.X_test is not None:
+			self.makeSvc()
+			self.commit()
+
+	@Inputs.train_data_y
+	def set_train_y(self, train_data_y):
+		"""Initializes and modifies the input data."""
+		self.y_train = train_data_y
+		if self.X_train is not None and self.y_train is not None and self.X_test is not None:
+			self.makeSvc()
+			self.commit()
+
+	@Inputs.test_data_X
+	def set_test_X(self, test_data_X):
+		"""Initializes and modifies the input data."""
+		self.X_test = test_data_X
+		if self.X_train is not None and self.y_train is not None and self.X_test is not None:
 			self.makeSvc()
 			self.commit()
 
 	def commit(self):
 		"""Outputs the processed data."""
-		self.Outputs.out_data.send(self.clp)
+		self.Outputs.test_data_y.send(self.y_test)
 
 
 if __name__ == "__main__":

@@ -108,10 +108,6 @@ class OWAveraging(OWWidget):
 
 		if self.data is not None and self.markers:
 			markers = [marker for marker in self.markers.values()]
-			print("*******")
-			print(self.data)
-			print(self.data.events)
-			print("*******")
 			avg = lambda x: self.average_epochs(x, markers, self.data.events)
 			try:
 				self.data = self.data.average(method=avg)

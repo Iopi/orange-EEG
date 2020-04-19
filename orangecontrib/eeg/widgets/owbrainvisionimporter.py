@@ -38,7 +38,7 @@ class OWBrainVisionImporter(OWWidget):
 		self.file_path = None
 		self.already_output = False
 		self.data = None
-		self.kind = 'biosemi16'
+		self.kind = 'standard_1020'
 
 		# GUI
 		box = gui.widgetBox(self.controlArea, "Info")

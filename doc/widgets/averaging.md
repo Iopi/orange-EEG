@@ -18,7 +18,7 @@ Averages the epoch data based on the stimuli markers
 
 ![](images/ave2.png)
 
-If there are markers on the input, their name will be shown and after the averaging process the network number of epochs averaged will be displayed.
+If there are markers on the input, their name will be shown and after the averaging process the number of epochs averaged will be displayed.
 
 Example
 -------

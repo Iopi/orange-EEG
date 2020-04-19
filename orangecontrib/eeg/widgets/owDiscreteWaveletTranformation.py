@@ -14,7 +14,7 @@ class OWDWT(OWWidget):
 	name = "Discrete wavelet tranformation"
 	description = "Computes approximation and deail coefficient."
 
-	#icon = "icons/icon_owaveraging.svg"
+	icon = "icons/icon_dwt.svg"
 
 	want_main_area = False
 	resizing_enabled = True
@@ -26,8 +26,8 @@ class OWDWT(OWWidget):
 		data = Input("Epoch data", mne.Epochs)
 
 	class Outputs:
-		approximation = Output("Approximation coefficient", mne.Epochs)
-		detail = Output("Detail coefficient", mne.Epochs)
+		approximation = Output("Approximation coefficient", numpy.ndarray)
+		detail = Output("Detail coefficient", numpy.ndarray)
 
 	def __init__(self):
 		super().__init__()
@@ -78,7 +78,7 @@ class OWDWT(OWWidget):
 
 	def dwt(self):
 		for i in range(self.degrees):
-			self.data_approximation, self.data_detail = pywt.dwt(self.data, self.wave_family)
+			self.data_approximation, self.data_detail = pywt.dwt(self.data.get_data()[:,:,:], self.wave_family)
 			self.data = self.data_approximation		
 
 	@Inputs.data
@@ -88,7 +88,7 @@ class OWDWT(OWWidget):
 		if self.data is not None:
 			self.data = self.data.copy()
 			self.dwt()
-		self.commit()
+			self.commit()
 
 	def commit(self):
 		self.Outputs.approximation.send(self.data_approximation)

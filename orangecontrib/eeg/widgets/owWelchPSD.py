@@ -15,7 +15,7 @@ class OWWelchPSD(OWWidget):
 	name = "Welch PSD"
 	description = "Compute the power spectral density (PSD) using Welch’s method."
 
-	#icon = "icons/icon_owaveraging.svg"
+	icon = "icons/icon_psd.svg"
 
 	want_main_area = False
 	resizing_enabled = True

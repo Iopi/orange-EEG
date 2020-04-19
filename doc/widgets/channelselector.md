@@ -1,6 +1,6 @@
 Channel Selector
 ================
-Orange widget that selects certain channels, specified by the user through GUI, from the EEG data, that this widget receives as an input.
+Selects certain channels, specified by the user through GUI, from the EEG data, that this widget receives as an input.
 
 
 **Inputs**

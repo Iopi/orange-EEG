@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="next" title="Common Spatial Patterns" href="CSP.html" />
+    <link rel="next" title="Discrete wavelet tranformation" href="DiscreteWaveletTranformation.html" />
     <link rel="prev" title="Baseline Correction" href="baselinecorrection.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -20,7 +20,7 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="CSP.html" title="Common Spatial Patterns"
+          <a href="DiscreteWaveletTranformation.html" title="Discrete wavelet tranformation"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="baselinecorrection.html" title="Baseline Correction"
@@ -35,15 +35,27 @@
             
   <div class="section" id="brainvision-importer">
 <h1>BrainVision Importer</h1>
-<p>short description</p>
+<p>Reads BrainVision data from a selected EEG file.</p>
 <p><strong>Inputs</strong></p>
 <ul class="simple">
-<li></li>
-<li></li>
+<li><em>.vhdr</em> file with eeg data</li>
 </ul>
 <p><strong>Outputs</strong></p>
+<ul class="simple">
+<li><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw" target="_blank">Raw</a></li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/brain1.png" src="../_images/brain1.png" /></p>
+<ol class="simple">
+<li>Montage file - Channel names you want to select</li>
+<li>Choose an EEG header file Button - Choose an EEG header file</li>
+<li>Save Button - Saves selected montage file and <em>vhdr</em> file with eeg data</li>
+</ol>
 <div class="section" id="example">
 <h2>Example</h2>
+<p><img alt="../_images/exa1work.png" src="../_images/exa1work.png" /></p>
+<p><img alt="../_images/exa1plot.png" src="../_images/exa1plot.png" /></p>
+<p>More information <a class="reference external" href="https://mne.tools/0.17/generated/mne.io.read_raw_brainvision.html" target="_blank">here</a></p>
 </div>
 </div>
 
@@ -59,7 +71,7 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="CSP.html" title="Common Spatial Patterns"
+          <a href="DiscreteWaveletTranformation.html" title="Discrete wavelet tranformation"
              >next</a> |</li>
         <li class="right" >
           <a href="baselinecorrection.html" title="Baseline Correction"

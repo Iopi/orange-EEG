@@ -13,10 +13,10 @@ from orangecontrib.eeg.utils import style
 
 
 class OWPlotWelchPSD(OWWidget):
-	name = "PlotWelchPSD"
+	name = "Plot Welch PSD"
 	description = "Plot the power spectral density across channels."
 
-	#icon = "icons/icon_owaveraging.svg"
+	icon = "icons/icon_plot_psd.svg"
 
 	want_main_area = False
 	resizing_enabled = True
@@ -50,6 +50,9 @@ class OWPlotWelchPSD(OWWidget):
 	
 	def plotPSD(self):
 		if self.data is not None:
+			print(numpy.shape(self.data[1]))
+			print(numpy.shape(self.data[0]))
+			print(numpy.shape(self.data[0][0,:]))
 			plt.plot(self.data[1], self.data[0][0,:])
 			plt.show()
 	

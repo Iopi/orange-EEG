@@ -1,0 +1,105 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=cp1252" />
+    <title>Time Frequency Maps</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="Welch PSD" href="WelchPSD.html" />
+    <link rel="prev" title="Support Vector Classification" href="SVC.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="WelchPSD.html" title="Welch PSD"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="SVC.html" title="Support Vector Classification"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="time-frequency-maps">
+<h1>Time Frequency Maps</h1>
+<p>Plot time-frequency maps.</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li>One of <a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html" target="_blank">Epochs</a> and
+<a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html" target="_blank">Evoked</a></li>
+</ul>
+<p><strong>Output</strong>
+Time-Frequency Map</p>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/tfmap.png" src="../_images/tfmap.png" /></p>
+<ol class="simple">
+<li>freq - The frequencies in Hz.</li>
+<li>n_cycles - The number of cycles globally or for each frequency. If <em>n_cycles</em> is ‘scale’ n_cycle = freqs / 2.</li>
+<li>baseline a - Start of the time interval to apply baseline correction.</li>
+<li>baseline b - End of the time interval to apply baseline correction.</li>
+<li>mode - MOde to perform baseline correction.
+Possibilities:<ul>
+<li><em>mean</em> - subtracting the mean of baseline values</li>
+<li><em>ratio</em> - dividing by the mean of baseline values</li>
+<li><em>logratio</em> - dividing by the mean of baseline values and taking the log</li>
+<li><em>percent</em> - subtracting the mean of baseline values followed by dividing by the mean of baseline values</li>
+<li><em>zscore</em> - subtracting the mean of baseline values and dividing by the standard deviation of baseline values</li>
+<li><em>zlogratio</em> - dividing by the mean of baseline values, taking the log, and dividing by the standard deviation of log baseline values</li>
+</ul>
+</li>
+<li>channel - Channel which TF should be ploted</li>
+<li>Plot TF of channel - If this check box is checked, the Time-Frequency of channel will be displayed after pressing <em>Show plot</em>.</li>
+<li>Plot topography - If this check box is checked, the topography will be displayed after pressing <em>Show plot</em>.</li>
+<li>Save button - Saves changes</li>
+<li>Show plot button - Button for showing plots.</li>
+</ol>
+<div class="section" id="example">
+<h2>Example</h2>
+<p><img alt="../_images/exa11work.png" src="../_images/exa11work.png" /></p>
+<p><img alt="../_images/exa11plot1.png" src="../_images/exa11plot1.png" /></p>
+<p><img alt="../_images/exa11plot2.png" src="../_images/exa11plot2.png" /></p>
+<p>Where <strong>Figure 1</strong> is <em>TF of channel</em> and <strong>Figure 2</strong> is <em>topography</em>.</p>
+<p>More information about <a class="reference external" href="https://mne.tools/0.17/generated/mne.time_frequency.AverageTFR.html#mne.time_frequency.AverageTFR.plot" target="_blank">plot TF of channel</a> and <a class="reference external" href="https://mne.tools/0.17/generated/mne.time_frequency.AverageTFR.html#mne.time_frequency.AverageTFR.plot_topo" target="_blank">plot topography</a>.
+Information about container for Time-Frequency data <a class="reference external" href="https://mne.tools/0.17/generated/mne.time_frequency.AverageTFR.html" target="_blank">here</a>.</p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="WelchPSD.html" title="Welch PSD"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="SVC.html" title="Support Vector Classification"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Pavel Pr&#367;cha.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+    </div>
+  </body>
+</html>

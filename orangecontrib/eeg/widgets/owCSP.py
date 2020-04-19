@@ -10,7 +10,7 @@ from PyQt5.QtGui import QFont
 from PyQt5.QtWidgets import QGridLayout, QLineEdit, QHBoxLayout, QPushButton, QLabel, QSizePolicy
 from orangecontrib.eeg.utils import style
 
-
+# !not working widget!
 class OWCSP(OWWidget):
 	name = "Common Spatial Patterns"
 	description = "M/EEG signal decomposition using the Common Spatial Patterns (CSP)."
@@ -32,9 +32,11 @@ class OWCSP(OWWidget):
 
 	def __init__(self):
 		super().__init__()
+		# global variables
 		self.n_components = 4
 		self.n_components_field = style.create_field(str(self.n_components))
 
+		#gui
 		box = gui.widgetBox(self.controlArea, "Info")
 		box.setAlignment(Qt.AlignCenter)
 		self.info = gui.widgetLabel(box, 'Fill in the necessary parameters.')
@@ -60,7 +62,9 @@ class OWCSP(OWWidget):
 		save_btn.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Fixed)
 		layout.addWidget(save_btn)
 
-	def save_values(self):			
+	def save_values(self):	
+		"""saves changed values"""
+
 		if self.n_components is not None:
 			num_n_components = self.n_components_field.text().strip()
 			try:
@@ -70,6 +74,8 @@ class OWCSP(OWWidget):
 				self.Error.num_n_components(num_n_components, str(self.n_components))
 	
 	def makeCsp(self):
+		"""makes CSP object"""
+
 		if self.data is not None:
 			X = self.data.get_data()  # MEG signals: n_epochs, n_meg_channels, n_times
 			y = self.data.events[:, 2]  # target: Audio left or right

@@ -30,6 +30,16 @@
 </UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Averaging Time Windows">
+    <param name="Local" value="widgets/AveragingTimeWindows.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Example">
+    <param name="Local" value="widgets/AveragingTimeWindows.html#example">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Baseline Correction">
     <param name="Local" value="widgets/baselinecorrection.html">
 </OBJECT>
@@ -50,23 +60,15 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Common Spatial Patterns">
-    <param name="Local" value="widgets/CSP.html">
-</OBJECT>
-<UL>
-<LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/CSP.html#inputs">
-</OBJECT>
-<LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Example">
-    <param name="Local" value="widgets/CSP.html#example">
-</OBJECT>
-</UL>
-<LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Discrete wavelet tranformation">
     <param name="Local" value="widgets/DiscreteWaveletTranformation.html">
 </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Example">
+    <param name="Local" value="widgets/DiscreteWaveletTranformation.html#example">
+</OBJECT>
+</UL>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="EEG Marker">
     <param name="Local" value="widgets/eegmarker.html">
@@ -102,6 +104,12 @@
     <param name="Name" value="Example">
     <param name="Local" value="widgets/epochextraction.html#example">
 </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Related widgets">
+    <param name="Local" value="widgets/epochextraction.html#related-widgets">
+</OBJECT>
+</UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Epochs to Table">
@@ -112,6 +120,22 @@
     <param name="Name" value="Example">
     <param name="Local" value="widgets/EpochsToTable.html#example">
 </OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Feature Labeling">
+    <param name="Local" value="widgets/FeatureLabeling.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Example">
+    <param name="Local" value="widgets/FeatureLabeling.html#example">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Related widgets">
+    <param name="Local" value="widgets/FeatureLabeling.html#related-widgets">
+</OBJECT>
+</UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Filter">
@@ -155,10 +179,6 @@
 </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/LDA.html#inputs">
-</OBJECT>
-<LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/LDA.html#example">
 </OBJECT>
@@ -190,7 +210,7 @@
 </UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="PlotWelchPSD">
+    <param name="Name" value="Plot Welch PSD">
     <param name="Local" value="widgets/PlotWelchPSD.html">
 </OBJECT>
 <UL>
@@ -216,17 +236,43 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Segmentation">
+    <param name="Local" value="widgets/Segmentation.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Example">
+    <param name="Local" value="widgets/Segmentation.html#example">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Straighten">
+    <param name="Local" value="widgets/Straighten.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Example">
+    <param name="Local" value="widgets/Straighten.html#example">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Support Vector Classification">
     <param name="Local" value="widgets/SVC.html">
 </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Inputs">
-    <param name="Local" value="widgets/SVC.html#inputs">
-</OBJECT>
-<LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
     <param name="Local" value="widgets/SVC.html#example">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Time Frequency Maps">
+    <param name="Local" value="widgets/TimeFreqMaps.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Example">
+    <param name="Local" value="widgets/TimeFreqMaps.html#example">
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">

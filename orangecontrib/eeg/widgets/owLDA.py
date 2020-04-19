@@ -13,43 +13,105 @@ from orangecontrib.eeg.utils import style
 
 class OWLDA(OWWidget):
 	name = "Linear Discriminant Analysis"
-	description = ""
+	description = "A classifier with a linear decision boundary."
 
-	#icon = "icons/icon_owaveraging.svg"
+	icon = "icons/icon_lda.svg"
 
 	want_main_area = False
 	resizing_enabled = True
 
 	class Inputs:
-		data_epoch = Input("Epoch data", mne.Epochs)
+		train_data_X = Input("Train data", numpy.ndarray)
+		train_data_y = Input("Train indexes", numpy.ndarray)
+		test_data_X = Input("Target data", numpy.ndarray)
+		test_data_y = Input("Target indexes", numpy.ndarray)
 
 	class Outputs:
-		out_data = Output("LDA", LinearDiscriminantAnalysis)
+		test_data_y = Output("Target indexes", numpy.ndarray)
 
 	def __init__(self):
 		super().__init__()
+		# global variables
+		self.X_train = None
+		self.y_train = None
+		self.X_test = None
+		self.y_test = None
 
 	def makeLda(self):
-		if self.data is not None:
-			X = self.data.get_data()  # MEG signals: n_epochs, n_meg_channels, n_times
-			y = self.data.events[:, 2]  # target: Audio left or right
-	
-			self.clp = LinearDiscriminantAnalysis()
-			self.clp.fit(X[:,0,:], y)
+		"""Predicts test's labels"""
+		
+		self.gained_y_test = None
+		if self.X_train is not None and self.y_train is not None and self.X_test is not None and self.y_test is not None:
+			ldaObj = LinearDiscriminantAnalysis()
+			ldaObj.fit(self.X_train, self.y_train)
+			self.gained_y_test = ldaObj.predict(self.X_test)			
+		
+		if self.gained_y_test in not None:
+			tp = 0
+			tn = 0
+			fp = 0
+			fn = 0
 
+			for i in range(leb(self.gained_y_test)):
+				if self.y_test[i] == 1:
+					if self.gained_y_test == 1:
+						tp += 1
+					else:
+						fp += 1
+				if self.y_test[i] == 2:
+					if self.gained_y_test == 2:
+						tn += 1
+					else:
+						fn += 1
 
-	@Inputs.data_epoch
-	def set_epoch(self, epoch):
+			self.precision = self.count_accuracy(tp, tn, fp, fn)
+			self.recall = self.count_recall(tp, tn, fp, fn)
+			self.accuracy = self.count_accuracy(tp, tn, fp, fn)
+
+	def count_accuracy(self, tp, tn, fp, fn):
+		return tp / (tp + fp)
+
+	def count_recall(self, tp, tn, fp, fn):
+		return tp / (tp + fn)
+
+	def count_accuracy(self, tp, tn, fp, fn):
+		return (tp + tn) / (tp + tn + fp + fn)
+
+	@Inputs.train_data_X
+	def set_train_X(self, train_data_X):
 		"""Initializes and modifies the input data."""
-		self.data = epoch
-		if self.data is not None:
-			self.data = self.data.copy()
+		self.X_train = train_data_X
+		if self.X_train is not None and self.y_train is not None and self.X_test is not None and self.y_test is not None:
+			self.makeLda()
+			self.commit()
+
+	@Inputs.train_data_y
+	def set_train_y(self, train_data_y):
+		"""Initializes and modifies the input data."""
+		self.y_train = train_data_y
+		if self.X_train is not None and self.y_train is not None and self.X_test is not None and self.y_test is not None:
+			self.makeLda()
+			self.commit()
+
+	@Inputs.test_data_X
+	def set_test_X(self, test_data_X):
+		"""Initializes and modifies the input data."""
+		self.X_test = test_data_X
+		if self.X_train is not None and self.y_train is not None and self.X_test is not None and self.y_test is not None:
+			self.makeLda()
+			self.commit()
+
+	@Inputs.train_data_y
+	def set_train_y(self, test_data_y):
+		"""Initializes and modifies the input data."""
+		self.y_test = test_data_y
+		if self.X_train is not None and self.y_train is not None and self.X_test is not None and self.y_test is not None:
 			self.makeLda()
 			self.commit()
 
 	def commit(self):
 		"""Outputs the processed data."""
-		self.Outputs.out_data.send(self.clp)
+		self.Outputs.test_data_y.send(self.y_test)
 
 
 if __name__ == "__main__":

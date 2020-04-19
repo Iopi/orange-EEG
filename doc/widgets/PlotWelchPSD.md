@@ -1,5 +1,5 @@
-PlotWelchPSD
-============
+Plot Welch PSD
+==============
 Plot the power spectral density across channels.
 
 
