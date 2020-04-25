@@ -13,7 +13,8 @@ Converts mne.Epochs data to Orange.data.Table data.
 
 ![](images/ett.png)
 
-After the convert process *Epochs converted* will be displayed.
+1. After the convert process *Epochs converted* will be displayed.
+2. Channel to convert - Name of channel to convert to Table data
 
 
 Example

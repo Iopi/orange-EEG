@@ -14,7 +14,7 @@ class OWEpochsToTable(OWWidget):
 	name = "Epochs to Table"
 	description = "Converts mne.Epochs data to Orange.data.Table data."
 
-	#icon = "icons/icon_owaveraging.svg"
+	icon = "icons/icon_epoch_to_table.svg"
 
 	want_main_area = False
 	resizing_enabled = True
@@ -41,7 +41,7 @@ class OWEpochsToTable(OWWidget):
 		#box.setMinimumSize(80, 10)
 		self.convert_info = gui.widgetLabel(box, "No epochs converted.")
 
-		self.info = gui.widgetLabel(box, 'Fill sample rate to use.')
+		self.info = gui.widgetLabel(box, 'Fill channel to convert.')
 		gui.separator(self.controlArea)
 
 		self.field_layout = QGridLayout()

@@ -25,6 +25,10 @@ Example
 
 ![](images/exa5work.png)
 
+![](images/exa5plot1.png)
+
+![](images/exa5plot2.png)
+
 More information about [plot sources](https://mne.tools/0.17/generated/mne.preprocessing.ICA.html#mne.preprocessing.ICA.plot_sources), [plot components](https://mne.tools/0.17/generated/mne.preprocessing.ICA.html#mne.preprocessing.ICA.plot_components) and [ICA](https://mne.tools/0.17/generated/mne.preprocessing.ICA.html).
 Information about all process [here](https://mne.tools/stable/auto_tutorials/preprocessing/plot_40_artifact_correction_ica.html#sphx-glr-auto-tutorials-preprocessing-plot-40-artifact-correction-ica-py).
 

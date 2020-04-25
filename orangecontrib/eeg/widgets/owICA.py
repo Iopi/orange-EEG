@@ -15,7 +15,7 @@ class OWICA(OWWidget):
 	name = "Independent Component Analysis"
 	description = "M/EEG signal decomposition using Independent Component Analysis (ICA)."
 
-	#icon = "icons/icon_owaveraging.svg"
+	icon = "icons/icon_ica.svg"
 
 	want_main_area = False
 	resizing_enabled = True
@@ -51,19 +51,19 @@ class OWICA(OWWidget):
 		self.field_layout = QGridLayout()
 		gui.widgetBox(self.controlArea, margin=10, orientation=self.field_layout)
 
-		n_components_label = QLabel("Number of PCA components.")
+		n_components_label = QLabel("Number of components.")
 		n_components_label.setFont(QFont("Helvetica", pointSize=11))
 		n_components_label.setAlignment(Qt.AlignCenter)
 		self.field_layout.addWidget(n_components_label)
 		self.field_layout.addWidget(self.n_components_field)
 
-		random_state_label = QLabel("Random state to initialize ICA estimation for reproducible results.")
+		random_state_label = QLabel("Random state")
 		random_state_label.setFont(QFont("Helvetica", pointSize=11))
 		random_state_label.setAlignment(Qt.AlignCenter)
 		self.field_layout.addWidget(random_state_label)
 		self.field_layout.addWidget(self.random_state_field)
 
-		max_iter_label = QLabel("Maximum number of iterations during fit.")
+		max_iter_label = QLabel("Maximum number of iterations")
 		max_iter_label.setFont(QFont("Helvetica", pointSize=11))
 		max_iter_label.setAlignment(Qt.AlignCenter)
 		self.field_layout.addWidget(max_iter_label)

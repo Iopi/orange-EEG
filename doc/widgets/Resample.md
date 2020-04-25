@@ -9,9 +9,9 @@ Resample data.
 - [Evoked](https://mne.tools/0.17/generated/mne.Evoked.html)
 
 **Outputs**
-- [Raw](https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw): Resamlped Raw
-- [Epochs](https://mne.tools/0.17/generated/mne.Epochs.html): Resamlped Epochs
-- [Evoked](https://mne.tools/0.17/generated/mne.Evoked.html): Resamlped Evoked
+- [Raw](https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw): Resampled Raw
+- [Epochs](https://mne.tools/0.17/generated/mne.Epochs.html): Resampled Epochs
+- [Evoked](https://mne.tools/0.17/generated/mne.Evoked.html): Resampled Evoked
 
 **Use**
 

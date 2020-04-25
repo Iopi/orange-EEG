@@ -14,7 +14,7 @@ class OWResample(OWWidget):
 	name = "Resample"
 	description = "Resample data."
 
-	#icon = "icons/icon_owaveraging.svg"
+	icon = "icons/icon_resample.svg"
 
 	want_main_area = False
 	resizing_enabled = True

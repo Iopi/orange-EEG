@@ -16,7 +16,7 @@ class OWPlotICA(OWWidget):
 	name = "PlotICA"
 	description = "Plot the Independent Component Analysis."
 
-	#icon = "icons/icon_owaveraging.svg"
+	icon = "icons/icon_plotica.svg"
 
 	want_main_area = False
 	resizing_enabled = True

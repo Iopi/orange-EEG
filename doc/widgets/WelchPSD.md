@@ -17,10 +17,10 @@ Compute the power spectral density (PSD) using Welch’s method.
 
 ![](images/welch1.png)
 
-1. Start frequency to consider - Min frequency of interest
-2. End frequency to consider - Max frequency of interest
-3. Start time to consider - Min time of interest
-4. End time to consider - Max time of interest
+1. Start frequency - Min frequency of interest
+2. End frequency - Max frequency of interest
+3. Start time - Min time of interest
+4. End time - Max time of interest
 5. Number of points to use in Welch FFT calculations
 
 Example

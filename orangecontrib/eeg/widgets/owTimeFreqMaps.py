@@ -16,7 +16,7 @@ class OWTimeFreqMaps(OWWidget):
 	name = "Time Frequency Maps"
 	description = "Plot time-frequency maps."
 
-	#icon = "icons/icon_owaveraging.svg"
+	icon = "icons/icon_tfmaps.svg"
 
 	want_main_area = False
 	resizing_enabled = True

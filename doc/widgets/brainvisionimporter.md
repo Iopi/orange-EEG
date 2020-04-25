@@ -13,7 +13,7 @@ Reads BrainVision data from a selected EEG file.
 
 ![](images/brain1.png)
 
-1. Montage file - Channel names you want to select
+1. Montage file - montage file name you want to select
 2. Choose an EEG header file Button - Choose an EEG header file
 3. Save Button - Saves selected montage file and *vhdr* file with eeg data
 

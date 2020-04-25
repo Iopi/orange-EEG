@@ -18,7 +18,7 @@ Time-Frequency Map
 2. n_cycles - The number of cycles globally or for each frequency. If *n_cycles* is 'scale' n_cycle = freqs / 2.
 3. baseline a - Start of the time interval to apply baseline correction.
 4. baseline b - End of the time interval to apply baseline correction.
-5. mode - MOde to perform baseline correction.
+5. mode - Mode to perform baseline correction.
   Possibilities:
     - *mean* - subtracting the mean of baseline values
 

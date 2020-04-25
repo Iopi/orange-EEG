@@ -1,11 +1,10 @@
-Feature Labeling
+Epochs Labeling
 ================
 Labels epochs' data according to its events.
 
 **Inputs**
 
 - [Epochs](https://mne.tools/0.17/generated/mne.Epochs.html)
-- EEGMarker: Markers from widget [EEGMarker](eegmarker.md)
 
 **Outputs**
 
@@ -16,9 +15,12 @@ Labels epochs' data according to its events.
 
 **Use**
 
-![](images/feat.png)
+![](images/label1.png)
 
-*Markers* - If there are markers on the input, their name will be shown.
+1. Classes - Classes for classification
+2. Add Button - Adds additional empty field for new class
+3. Remove Button - Removes last field
+4. Save Button - Saves changed classes
 
 Example
 -------

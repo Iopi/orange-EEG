@@ -15,7 +15,7 @@ class OWFilter(OWWidget):
 	name = "Filter"
 	description = "Filter a subset of channels."
 
-	#icon = "icons/icon_owaveraging.svg"
+	icon = "icons/icon_filter.svg"
 
 	want_main_area = False
 	resizing_enabled = True

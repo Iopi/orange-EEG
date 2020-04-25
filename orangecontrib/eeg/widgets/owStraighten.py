@@ -35,18 +35,18 @@ class OWStraighten(OWWidget):
 	def straighten(self):
 		"""Straighten epoch data by channels"""
 
-		self.array2d = numpy.zeros((len(self.array3d) * len(self.array3d.get_data()[0]), len(self.array3d.get_data()[0][0])), float)
+		self.array2d = numpy.zeros((len(self.array3d) * len(self.array3d[0]), len(self.array3d[0][0])), float)
 
-		for ch in range(len(self.array3d.get_data()[0])):
+		for ch in range(len(self.array3d[0])):
 			for e in range(len(self.array3d)):
-				for t in range(len(self.array3d.get_data()[0][0])):
-					self.array2d[e+ch*(len(self.epochs))][t] = self.array3d[e][ch][t]
+				for t in range(len(self.array3d[0][0])):
+					self.array2d[e+ch*(len(self.array3d))][t] = self.array3d[e][ch][t]
 
 	@Inputs.data
 	def set_train_X(self, data):
 		"""Initializes and modifies the input data."""
 		self.array3d = data
-		if self.array2d is not None:
+		if self.array3d is not None:
 			self.straighten()
 			self.commit()
 
