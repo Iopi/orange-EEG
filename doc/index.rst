@@ -20,7 +20,7 @@ Widgets
    widgets/eegplot
    widgets/epochextraction
    widgets/EpochsToTable
-   widgets/FeatureLabeling
+   widgets/EpochsLabeling
    widgets/Filter
    widgets/channelselector
    widgets/ICA

@@ -14,8 +14,8 @@
     <script src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Support Vector Classification" href="SVC.html" />
-    <link rel="prev" title="PlotWelchPSD" href="PlotWelchPSD.html" /> 
+    <link rel="next" title="Segmentation" href="Segmentation.html" />
+    <link rel="prev" title="Plot Welch PSD" href="PlotWelchPSD.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -24,10 +24,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="SVC.html" title="Support Vector Classification"
+          <a href="Segmentation.html" title="Segmentation"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="PlotWelchPSD.html" title="PlotWelchPSD"
+          <a href="PlotWelchPSD.html" title="Plot Welch PSD"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>
@@ -40,16 +40,31 @@
             
   <div class="section" id="resample">
 <h1>Resample<a class="headerlink" href="#resample" title="Permalink to this headline">¶</a></h1>
-<p>short description</p>
-<div class="section" id="inputs">
-<h2><strong>Inputs</strong><a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<p>Resample data.</p>
+<p><strong>Inputs</strong></p>
 <ul class="simple">
-<li></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw">Raw</a></p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html">Epochs</a></p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html">Evoked</a></p></li>
 </ul>
 <p><strong>Outputs</strong></p>
-</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw">Raw</a>: Resampled Raw</p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html">Epochs</a>: Resampled Epochs</p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html">Evoked</a>: Resampled Evoked</p></li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/res1.png" src="../_images/res1.png" /></p>
+<ol class="simple">
+<li><p>Sample rate to use - Set sampling frequency.</p></li>
+</ol>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img alt="../_images/exa7work.png" src="../_images/exa7work.png" /></p>
+<p><img alt="../_images/exa7plot.png" src="../_images/exa7plot.png" /></p>
+<p>More information filter in Raw <a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw.resample">here</a>.
+More information filter in Epochs <a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html#mne.Epochs.resample">here</a>.
+More information filter in Evoked <a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html#mne.Evoked.resample">here</a>.</p>
 </div>
 </div>
 
@@ -62,7 +77,6 @@
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Resample</a><ul>
-<li><a class="reference internal" href="#inputs"><strong>Inputs</strong></a></li>
 <li><a class="reference internal" href="#example">Example</a></li>
 </ul>
 </li>
@@ -70,10 +84,10 @@
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="PlotWelchPSD.html"
-                        title="previous chapter">PlotWelchPSD</a></p>
+                        title="previous chapter">Plot Welch PSD</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="SVC.html"
-                        title="next chapter">Support Vector Classification</a></p>
+  <p class="topless"><a href="Segmentation.html"
+                        title="next chapter">Segmentation</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -102,10 +116,10 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="SVC.html" title="Support Vector Classification"
+          <a href="Segmentation.html" title="Segmentation"
              >next</a> |</li>
         <li class="right" >
-          <a href="PlotWelchPSD.html" title="PlotWelchPSD"
+          <a href="PlotWelchPSD.html" title="Plot Welch PSD"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>

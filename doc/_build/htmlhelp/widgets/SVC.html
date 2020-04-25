@@ -41,16 +41,38 @@
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html" target="_blank">numpy.ndarray</a>: Training data</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html" target="_blank">numpy.ndarray</a>: Labels of training data</li>
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html" target="_blank">numpy.ndarray</a>: Target data</li>
-</ul>
-<p><strong>Outputs</strong></p>
-<ul class="simple">
 <li><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html" target="_blank">numpy.ndarray</a>: Labels of target data</li>
 </ul>
+<p><strong>Outputs</strong>
+If classification is binary:</p>
+<ul class="simple">
+<li><em>float</em>: accuracy</li>
+<li><em>float</em>: recall</li>
+<li><em>float</em>: precision</li>
+</ul>
+<p>If classification is multi-class:</p>
+<ul class="simple">
+<li><em>float</em>: accuracy</li>
+</ul>
+<p><img alt="../_images/svc1.png" src="../_images/svc1.png" /></p>
+<ol class="simple">
+<li>Results - Here are displayed results:<ul>
+<li>accuracy, recall and precision in binary classification</li>
+<li>accuracy in multi-class classification</li>
+</ul>
+</li>
+<li>Random state - The seed of the pseudo random number generator to use when shuffling the data for the dual coordinate descent.</li>
+<li>Max iter - The maximum number of iterations to be run.</li>
+</ol>
 <div class="section" id="example">
 <h2>Example</h2>
-<p><img alt="../_images/exa9work.png" src="../_images/exa9work.png" /></p>
-<p><img alt="../_images/exa9plot.png" src="../_images/exa9plot.png" /></p>
-<p>More information <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html" target="_blank">here</a></p>
+<p><img alt="../_images/exa12work.png" src="../_images/exa12work.png" /></p>
+<p><img alt="../_images/exa12plot.png" src="../_images/exa12plot.png" /></p>
+<p>More information <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html" target="_blank">here</a></p>
+<div class="section" id="related-widgets">
+<h3>Related widgets</h3>
+<p><a class="reference internal" href="LDA.html"><span class="doc">EEG Marker</span></a></p>
+</div>
 </div>
 </div>
 

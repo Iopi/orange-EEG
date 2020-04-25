@@ -35,7 +35,8 @@
             
   <div class="section" id="independent-component-analysis">
 <h1>Independent Component Analysis</h1>
-<p>M/EEG signal decomposition using Independent Component Analysis (ICA).</p>
+<p>M/EEG signal decomposition using Independent Component Analysis (ICA).
+ICA is sensitive to low-frequency drifts and therefore requires the data to be high-pass filtered prior to fitting. Typically, a cutoff frequency of 1 Hz is recommended.</p>
 <p><strong>Inputs</strong></p>
 <ul class="simple">
 <li><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw" target="_blank">Raw</a></li>
@@ -49,13 +50,15 @@
 <p><strong>Use</strong></p>
 <p><img alt="../_images/ica1.png" src="../_images/ica1.png" /></p>
 <ol class="simple">
-<li>Number of PCA components - Controls the number of PCA components from the pre-ICA PCA entering the ICA decomposition in the ICA.fit() method</li>
-<li>Random state to initialize ICA estimation for representativ results.</li>
-<li>Maximum number of iterations during fit.</li>
+<li>Number of components - Number of principal components that are passed to the ICA algorithm during fitting.</li>
+<li>Random state - Random state to initialize ICA estimation for representativ results.</li>
+<li>Maximum number of iterations - Maximum number of iterations during fit.</li>
 </ol>
 <div class="section" id="example">
 <h2>Example</h2>
 <p><img alt="../_images/exa5work.png" src="../_images/exa5work.png" /></p>
+<p><img alt="../_images/exa5plot1.png" src="../_images/exa5plot1.png" /></p>
+<p><img alt="../_images/exa5plot2.png" src="../_images/exa5plot2.png" /></p>
 <p>More information <a class="reference external" href="https://mne.tools/0.17/generated/mne.preprocessing.ICA.html" target="_blank">here</a>
 and <a class="reference external" href="https://mne.tools/stable/auto_tutorials/preprocessing/plot_40_artifact_correction_ica.html#sphx-glr-auto-tutorials-preprocessing-plot-40-artifact-correction-ica-py" target="_blank">here</a>.</p>
 <div class="section" id="related-widgets">

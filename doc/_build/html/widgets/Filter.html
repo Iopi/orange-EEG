@@ -15,7 +15,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Channel Selector" href="channelselector.html" />
-    <link rel="prev" title="Epochs to Table" href="EpochsToTable.html" /> 
+    <link rel="prev" title="Epochs Labeling" href="EpochsLabeling.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -27,7 +27,7 @@
           <a href="channelselector.html" title="Channel Selector"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="EpochsToTable.html" title="Epochs to Table"
+          <a href="EpochsLabeling.html" title="Epochs Labeling"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>
@@ -40,16 +40,31 @@
             
   <div class="section" id="filter">
 <h1>Filter<a class="headerlink" href="#filter" title="Permalink to this headline">¶</a></h1>
-<p>short description</p>
-<div class="section" id="inputs">
-<h2><strong>Inputs</strong><a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<p>Filter a subset of channels.</p>
+<p><strong>Inputs</strong></p>
 <ul class="simple">
-<li></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw">Raw</a></p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html">Epochs</a></p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html">Evoked</a></p></li>
 </ul>
 <p><strong>Outputs</strong></p>
-</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw">Raw</a>: Filtered Raw</p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html">Epochs</a>: Filtered Epochs</p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html">Evoked</a>: Filtered Evoked</p></li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/fil1.png" src="../_images/fil1.png" /></p>
+<ol class="simple">
+<li><p>The lower pass-band edge - Low cut-off frequency in Hz.</p></li>
+<li><p>The upper pass-band edge - High cut-off frequency in Hz.</p></li>
+</ol>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img alt="../_images/exa5work.png" src="../_images/exa5work.png" /></p>
+<p>More information filter in Raw <a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw.filter">here</a>.
+More information filter in Epochs <a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html#mne.Epochs.filter">here</a>.
+More information filter in Evoked <a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html#mne.Evoked.filter">here</a>.</p>
 </div>
 </div>
 
@@ -62,15 +77,14 @@
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Filter</a><ul>
-<li><a class="reference internal" href="#inputs"><strong>Inputs</strong></a></li>
 <li><a class="reference internal" href="#example">Example</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="EpochsToTable.html"
-                        title="previous chapter">Epochs to Table</a></p>
+  <p class="topless"><a href="EpochsLabeling.html"
+                        title="previous chapter">Epochs Labeling</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="channelselector.html"
                         title="next chapter">Channel Selector</a></p>
@@ -105,7 +119,7 @@
           <a href="channelselector.html" title="Channel Selector"
              >next</a> |</li>
         <li class="right" >
-          <a href="EpochsToTable.html" title="Epochs to Table"
+          <a href="EpochsLabeling.html" title="Epochs Labeling"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>

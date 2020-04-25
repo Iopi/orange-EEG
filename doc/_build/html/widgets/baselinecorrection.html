@@ -15,7 +15,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="BrainVision Importer" href="brainvisionimporter.html" />
-    <link rel="prev" title="Averaging" href="averaging.html" /> 
+    <link rel="prev" title="Averaging Time Windows" href="AveragingTimeWindows.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -27,7 +27,7 @@
           <a href="brainvisionimporter.html" title="BrainVision Importer"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="averaging.html" title="Averaging"
+          <a href="AveragingTimeWindows.html" title="Averaging Time Windows"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>
@@ -40,15 +40,26 @@
             
   <div class="section" id="baseline-correction">
 <h1>Baseline Correction<a class="headerlink" href="#baseline-correction" title="Permalink to this headline">¶</a></h1>
-<p>short description</p>
+<p>Orange widget that applies the baseline correction on the EEG data</p>
 <p><strong>Inputs</strong></p>
 <ul class="simple">
-<li></li>
-<li></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html">Epochs</a></p></li>
 </ul>
 <p><strong>Outputs</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html">Epochs</a>: The baseline-corrected Epochs object.</p></li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/base1.png" src="../_images/base1.png" /></p>
+<ol class="simple">
+<li><p>Start time - Start of interval for baseline correction</p></li>
+<li><p>End time - End of interval for baseline correction</p></li>
+</ol>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img alt="../_images/exa3work.png" src="../_images/exa3work.png" /></p>
+<p><img alt="../_images/exa3plot.png" src="../_images/exa3plot.png" /></p>
+<p>More information <a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html#mne.Epochs.apply_baseline">here</a>.</p>
 </div>
 </div>
 
@@ -67,8 +78,8 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="averaging.html"
-                        title="previous chapter">Averaging</a></p>
+  <p class="topless"><a href="AveragingTimeWindows.html"
+                        title="previous chapter">Averaging Time Windows</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="brainvisionimporter.html"
                         title="next chapter">BrainVision Importer</a></p>
@@ -103,7 +114,7 @@
           <a href="brainvisionimporter.html" title="BrainVision Importer"
              >next</a> |</li>
         <li class="right" >
-          <a href="averaging.html" title="Averaging"
+          <a href="AveragingTimeWindows.html" title="Averaging Time Windows"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>

@@ -122,18 +122,18 @@
 </OBJECT>
 </UL>
 <LI> <OBJECT type="text/sitemap">
-    <param name="Name" value="Feature Labeling">
-    <param name="Local" value="widgets/FeatureLabeling.html">
+    <param name="Name" value="Epochs Labeling">
+    <param name="Local" value="widgets/EpochsLabeling.html">
 </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Example">
-    <param name="Local" value="widgets/FeatureLabeling.html#example">
+    <param name="Local" value="widgets/EpochsLabeling.html#example">
 </OBJECT>
 <UL>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Related widgets">
-    <param name="Local" value="widgets/FeatureLabeling.html#related-widgets">
+    <param name="Local" value="widgets/EpochsLabeling.html#related-widgets">
 </OBJECT>
 </UL>
 </UL>
@@ -182,6 +182,12 @@
     <param name="Name" value="Example">
     <param name="Local" value="widgets/LDA.html#example">
 </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Related widgets">
+    <param name="Local" value="widgets/LDA.html#related-widgets">
+</OBJECT>
+</UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="LSL Data Receiver">
@@ -264,6 +270,12 @@
     <param name="Name" value="Example">
     <param name="Local" value="widgets/SVC.html#example">
 </OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Related widgets">
+    <param name="Local" value="widgets/SVC.html#related-widgets">
+</OBJECT>
+</UL>
 </UL>
 <LI> <OBJECT type="text/sitemap">
     <param name="Name" value="Time Frequency Maps">

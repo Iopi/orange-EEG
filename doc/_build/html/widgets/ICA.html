@@ -40,16 +40,36 @@
             
   <div class="section" id="independent-component-analysis">
 <h1>Independent Component Analysis<a class="headerlink" href="#independent-component-analysis" title="Permalink to this headline">¶</a></h1>
-<p>short description</p>
-<div class="section" id="inputs">
-<h2><strong>Inputs</strong><a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<p>M/EEG signal decomposition using Independent Component Analysis (ICA).
+ICA is sensitive to low-frequency drifts and therefore requires the data to be high-pass filtered prior to fitting. Typically, a cutoff frequency of 1 Hz is recommended.</p>
+<p><strong>Inputs</strong></p>
 <ul class="simple">
-<li></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw">Raw</a></p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html">Epochs</a></p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html">Evoked</a></p></li>
 </ul>
 <p><strong>Outputs</strong></p>
-</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.preprocessing.ICA.html">ICA</a>: Object of Independent Component Analysis</p></li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/ica1.png" src="../_images/ica1.png" /></p>
+<ol class="simple">
+<li><p>Number of components - Number of principal components that are passed to the ICA algorithm during fitting.</p></li>
+<li><p>Random state - Random state to initialize ICA estimation for representativ results.</p></li>
+<li><p>Maximum number of iterations - Maximum number of iterations during fit.</p></li>
+</ol>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img alt="../_images/exa5work.png" src="../_images/exa5work.png" /></p>
+<p><img alt="../_images/exa5plot1.png" src="../_images/exa5plot1.png" /></p>
+<p><img alt="../_images/exa5plot2.png" src="../_images/exa5plot2.png" /></p>
+<p>More information <a class="reference external" href="https://mne.tools/0.17/generated/mne.preprocessing.ICA.html">here</a>
+and <a class="reference external" href="https://mne.tools/stable/auto_tutorials/preprocessing/plot_40_artifact_correction_ica.html#sphx-glr-auto-tutorials-preprocessing-plot-40-artifact-correction-ica-py">here</a>.</p>
+<div class="section" id="related-widgets">
+<h3>Related widgets<a class="headerlink" href="#related-widgets" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="PlotICA.html"><span class="doc">Plot ICA</span></a></p>
+</div>
 </div>
 </div>
 
@@ -62,8 +82,10 @@
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Independent Component Analysis</a><ul>
-<li><a class="reference internal" href="#inputs"><strong>Inputs</strong></a></li>
-<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#related-widgets">Related widgets</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

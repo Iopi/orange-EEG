@@ -40,16 +40,59 @@
             
   <div class="section" id="linear-discriminant-analysis">
 <h1>Linear Discriminant Analysis<a class="headerlink" href="#linear-discriminant-analysis" title="Permalink to this headline">¶</a></h1>
-<p>short description</p>
-<div class="section" id="inputs">
-<h2><strong>Inputs</strong><a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<p>A classifier with a linear decision boundary.</p>
+<p><strong>Inputs</strong></p>
 <ul class="simple">
-<li></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html">numpy.ndarray</a>: Training data</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html">numpy.ndarray</a>: Labels of training data</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html">numpy.ndarray</a>: Target data</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html">numpy.ndarray</a>: Labels of target data</p></li>
 </ul>
-<p><strong>Outputs</strong></p>
-</div>
+<p><strong>Outputs</strong>
+If classification is binary:</p>
+<ul class="simple">
+<li><p><em>float</em>: accuracy</p></li>
+<li><p><em>float</em>: recall</p></li>
+<li><p><em>float</em>: precision</p></li>
+</ul>
+<p>If classification is multi-class:</p>
+<ul class="simple">
+<li><p><em>float</em>: accuracy</p></li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/lda1.png" src="../_images/lda1.png" /></p>
+<ol class="simple">
+<li><p>Results - Here are displayed results:</p>
+<ul class="simple">
+<li><p>accuracy, recall and precision in binary classification</p></li>
+<li><p>accuracy in multi-class classification</p></li>
+</ul>
+</li>
+<li><p>solver - Solver to use, possible values:</p>
+<ul class="simple">
+<li><p><em>svd</em>: Singular value decomposition.</p></li>
+<li><p><em>lsqr</em>: Least squares solution, can be combined with shrinkage.</p></li>
+<li><p><em>eigen</em>: Eigenvalue decomposition, can be combined with shrinkage.</p></li>
+</ul>
+</li>
+<li><p>shrinkage</p>
+<ul class="simple">
+<li><p>None: no shrinkag.</p></li>
+<li><p><em>auto</em>: automatic shrinkage using the Ledoit-Wolf lemma.</p></li>
+<li><p>float between 0 and 1: fixed shrinkage parameter.
+Note that shrinkage works only with <em>lsqr</em> and <em>eigen</em> solvers.</p></li>
+</ul>
+</li>
+</ol>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img alt="../_images/exa9work.png" src="../_images/exa9work.png" /></p>
+<p><img alt="../_images/exa9plot.png" src="../_images/exa9plot.png" /></p>
+<p>More information <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html">here</a></p>
+<div class="section" id="related-widgets">
+<h3>Related widgets<a class="headerlink" href="#related-widgets" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="SVC.html"><span class="doc">EEG Marker</span></a></p>
+</div>
 </div>
 </div>
 
@@ -62,8 +105,10 @@
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Linear Discriminant Analysis</a><ul>
-<li><a class="reference internal" href="#inputs"><strong>Inputs</strong></a></li>
-<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#related-widgets">Related widgets</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

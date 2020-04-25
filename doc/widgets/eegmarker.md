@@ -25,4 +25,3 @@ Example
 
 [Averaging](averaging.md)
 [Epoch extraction](epochextraction.md)
-[Feature Labeling](FeatureLabeling.md)

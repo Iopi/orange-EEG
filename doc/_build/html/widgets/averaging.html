@@ -14,7 +14,7 @@
     <script src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Baseline Correction" href="baselinecorrection.html" />
+    <link rel="next" title="Averaging Time Windows" href="AveragingTimeWindows.html" />
     <link rel="prev" title="Orange3-Eeg Documentation" href="../index.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -24,7 +24,7 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="baselinecorrection.html" title="Baseline Correction"
+          <a href="AveragingTimeWindows.html" title="Averaging Time Windows"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="../index.html" title="Orange3-Eeg Documentation"
@@ -43,20 +43,25 @@
 <p>Averages the epoch data based on the stimuli markers</p>
 <p><strong>Inputs</strong></p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://mne.tools/dev/generated/mne.Epochs.html">Epochs</a></p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html">Epochs</a></p></li>
 <li><p>EEGMarker: Markers from widget <a class="reference internal" href="eegmarker.html"><span class="doc">EEGMarker</span></a></p></li>
 </ul>
 <p><strong>Outputs</strong></p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://mne.tools/stable/generated/mne.Evoked.html">Evoked</a></p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html">Evoked</a>: The averaged epochs.</p></li>
 </ul>
-<p><strong>Atributes</strong></p>
-<p><img alt="../_images/ave1.png" src="../_images/ave1.png" /></p>
+<p><strong>Use</strong></p>
 <p><img alt="../_images/ave2.png" src="../_images/ave2.png" /></p>
+<p>If there are markers on the input, their name will be shown and after the averaging process the number of epochs averaged will be displayed.</p>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p><img alt="../_images/exa2work.png" src="../_images/exa2work.png" /></p>
 <p><img alt="../_images/exa2plot.png" src="../_images/exa2plot.png" /></p>
+<p>More information <a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html#mne.Epochs.average">here</a>.</p>
+<div class="section" id="related-widgets">
+<h3>Related widgets<a class="headerlink" href="#related-widgets" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="eegmarker.html"><span class="doc">EEG Marker</span></a></p>
+</div>
 </div>
 </div>
 
@@ -69,7 +74,10 @@
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Averaging</a><ul>
-<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#related-widgets">Related widgets</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -78,8 +86,8 @@
   <p class="topless"><a href="../index.html"
                         title="previous chapter">Orange3-Eeg Documentation</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="baselinecorrection.html"
-                        title="next chapter">Baseline Correction</a></p>
+  <p class="topless"><a href="AveragingTimeWindows.html"
+                        title="next chapter">Averaging Time Windows</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -108,7 +116,7 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="baselinecorrection.html" title="Baseline Correction"
+          <a href="AveragingTimeWindows.html" title="Averaging Time Windows"
              >next</a> |</li>
         <li class="right" >
           <a href="../index.html" title="Orange3-Eeg Documentation"

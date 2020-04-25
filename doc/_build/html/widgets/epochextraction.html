@@ -40,16 +40,32 @@
             
   <div class="section" id="epoch-extraction">
 <h1>Epoch Extraction<a class="headerlink" href="#epoch-extraction" title="Permalink to this headline">¶</a></h1>
-<p>short description</p>
-<div class="section" id="inputs">
-<h2><strong>Inputs</strong><a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<p>Extracts specified epochs from the EEG data.</p>
+<p><strong>Inputs</strong></p>
 <ul class="simple">
-<li></li>
+<li><p>EEGMarker: Markers from widget <a class="reference internal" href="eegmarker.html"><span class="doc">EEGMarker</span></a></p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw">Raw</a></p></li>
 </ul>
 <p><strong>Outputs</strong></p>
-</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html">Epochs</a>: Extracted Epochs</p></li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/etra.png" src="../_images/etra.png" /></p>
+<ol class="simple">
+<li><p><em>Markers</em> - If markers are added, extracted Epochs will be only Epochs with event-ID of added markers-ID.</p></li>
+<li><p>PreStimulus offset - Start time before event.</p></li>
+<li><p>PostStimulus offset - End time after event.</p></li>
+</ol>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img alt="../_images/exa1work.png" src="../_images/exa1work.png" /></p>
+<p><img alt="../_images/exa1plot.png" src="../_images/exa1plot.png" /></p>
+<p>More information <a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html">here</a>.</p>
+<div class="section" id="related-widgets">
+<h3>Related widgets<a class="headerlink" href="#related-widgets" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="eegmarker.html"><span class="doc">EEG Marker</span></a></p>
+</div>
 </div>
 </div>
 
@@ -62,8 +78,10 @@
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Epoch Extraction</a><ul>
-<li><a class="reference internal" href="#inputs"><strong>Inputs</strong></a></li>
-<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#related-widgets">Related widgets</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

@@ -29,6 +29,7 @@ _static\pygments.css
 widgets\AveragingTimeWindows.html
 widgets\CSP.html
 widgets\DiscreteWaveletTranformation.html
+widgets\EpochsLabeling.html
 widgets\EpochsToTable.html
 widgets\FeatureLabeling.html
 widgets\Filter.html

@@ -14,7 +14,7 @@
     <script src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Support Vector Classification" href="SVC.html" /> 
+    <link rel="prev" title="Time Frequency Maps" href="TimeFreqMaps.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -23,7 +23,7 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="SVC.html" title="Support Vector Classification"
+          <a href="TimeFreqMaps.html" title="Time Frequency Maps"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>
@@ -36,16 +36,40 @@
             
   <div class="section" id="welch-psd">
 <h1>Welch PSD<a class="headerlink" href="#welch-psd" title="Permalink to this headline">¶</a></h1>
-<p>short description</p>
-<div class="section" id="inputs">
-<h2><strong>Inputs</strong><a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<p>Compute the power spectral density (PSD) using Welch’s method.</p>
+<p><strong>Inputs</strong></p>
 <ul class="simple">
-<li></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw">Raw</a></p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html">Epochs</a></p></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html">Evoked</a></p></li>
 </ul>
 <p><strong>Outputs</strong></p>
-</div>
+<ul class="simple">
+<li><p>(psds, freqs)</p>
+<ul>
+<li><p>psds - The power spectral densities.</p></li>
+<li><p>freqs - The frequencies.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/welch1.png" src="../_images/welch1.png" /></p>
+<ol class="simple">
+<li><p>Start frequency - Min frequency of interest</p></li>
+<li><p>End frequency - Max frequency of interest</p></li>
+<li><p>Start time - Min time of interest</p></li>
+<li><p>End time - Max time of interest</p></li>
+<li><p>Number of points to use in Welch FFT calculations</p></li>
+</ol>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img alt="../_images/exa8work.png" src="../_images/exa8work.png" /></p>
+<p><img alt="../_images/exa8plot.png" src="../_images/exa8plot.png" /></p>
+<p>More information <a class="reference external" href="https://mne.tools/0.17/generated/mne.time_frequency.psd_welch.html">here</a>.</p>
+<div class="section" id="related-widgets">
+<h3>Related widgets<a class="headerlink" href="#related-widgets" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="PlotWelchPSD.html"><span class="doc">Plot Welsch PSD</span></a></p>
+</div>
 </div>
 </div>
 
@@ -58,15 +82,17 @@
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Welch PSD</a><ul>
-<li><a class="reference internal" href="#inputs"><strong>Inputs</strong></a></li>
-<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#related-widgets">Related widgets</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="SVC.html"
-                        title="previous chapter">Support Vector Classification</a></p>
+  <p class="topless"><a href="TimeFreqMaps.html"
+                        title="previous chapter">Time Frequency Maps</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -95,7 +121,7 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="SVC.html" title="Support Vector Classification"
+          <a href="TimeFreqMaps.html" title="Time Frequency Maps"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>

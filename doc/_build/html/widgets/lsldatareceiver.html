@@ -14,7 +14,7 @@
     <script src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="PlotWelchPSD" href="PlotWelchPSD.html" />
+    <link rel="next" title="PlotICA" href="PlotICA.html" />
     <link rel="prev" title="Linear Discriminant Analysis" href="LDA.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -24,7 +24,7 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="PlotWelchPSD.html" title="PlotWelchPSD"
+          <a href="PlotICA.html" title="PlotICA"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="LDA.html" title="Linear Discriminant Analysis"
@@ -40,16 +40,29 @@
             
   <div class="section" id="lsl-data-receiver">
 <h1>LSL Data Receiver<a class="headerlink" href="#lsl-data-receiver" title="Permalink to this headline">¶</a></h1>
-<p>short description</p>
-<div class="section" id="inputs">
-<h2><strong>Inputs</strong><a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<p>Receives EEG LSL data.</p>
+<p><strong>Inputs</strong></p>
 <ul class="simple">
-<li></li>
+<li><p>Online data streams</p></li>
+<li><p>Online markers stream</p></li>
 </ul>
 <p><strong>Outputs</strong></p>
-</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw">Raw</a></p></li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/lsl1.png" src="../_images/lsl1.png" /></p>
+<ol class="simple">
+<li><p>Streams settings - settings for data and markers</p></li>
+<li><p>Timeout - Optionally a timeout of the operation, in seconds. If the timeout expires, less than the desired number of streams (possibly none) will be returned. (default FOREVER)</p></li>
+<li><p>Save stream settings button - saves the <em>Streams settings</em> changes</p></li>
+<li><p>Find streams button - Starts with findings streams with data and markers</p></li>
+<li><p>Send data button - Sends found data to workflow (as output Raw)</p></li>
+<li><p>Stop button - Stop data finding</p></li>
+</ol>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img alt="../_images/exa6work.png" src="../_images/exa6work.png" /></p>
 </div>
 </div>
 
@@ -62,7 +75,6 @@
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">LSL Data Receiver</a><ul>
-<li><a class="reference internal" href="#inputs"><strong>Inputs</strong></a></li>
 <li><a class="reference internal" href="#example">Example</a></li>
 </ul>
 </li>
@@ -72,8 +84,8 @@
   <p class="topless"><a href="LDA.html"
                         title="previous chapter">Linear Discriminant Analysis</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="PlotWelchPSD.html"
-                        title="next chapter">PlotWelchPSD</a></p>
+  <p class="topless"><a href="PlotICA.html"
+                        title="next chapter">PlotICA</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -102,7 +114,7 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="PlotWelchPSD.html" title="PlotWelchPSD"
+          <a href="PlotICA.html" title="PlotICA"
              >next</a> |</li>
         <li class="right" >
           <a href="LDA.html" title="Linear Discriminant Analysis"

@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Time Frequency Maps &#8212; Orange3-Eeg 1.0.0 documentation</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Welch PSD" href="WelchPSD.html" />
+    <link rel="prev" title="Support Vector Classification" href="SVC.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="WelchPSD.html" title="Welch PSD"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="SVC.html" title="Support Vector Classification"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="time-frequency-maps">
+<h1>Time Frequency Maps<a class="headerlink" href="#time-frequency-maps" title="Permalink to this headline">¶</a></h1>
+<p>Plot time-frequency maps.</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li><p>One of <a class="reference external" href="https://mne.tools/0.17/generated/mne.Epochs.html">Epochs</a> and
+<a class="reference external" href="https://mne.tools/0.17/generated/mne.Evoked.html">Evoked</a></p></li>
+</ul>
+<p><strong>Output</strong>
+Time-Frequency Map</p>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/tfmap.png" src="../_images/tfmap.png" /></p>
+<ol class="simple">
+<li><p>freq - The frequencies in Hz.</p></li>
+<li><p>n_cycles - The number of cycles globally or for each frequency. If <em>n_cycles</em> is ‘scale’ n_cycle = freqs / 2.</p></li>
+<li><p>baseline a - Start of the time interval to apply baseline correction.</p></li>
+<li><p>baseline b - End of the time interval to apply baseline correction.</p></li>
+<li><p>mode - Mode to perform baseline correction.
+Possibilities:</p>
+<ul class="simple">
+<li><p><em>mean</em> - subtracting the mean of baseline values</p></li>
+<li><p><em>ratio</em> - dividing by the mean of baseline values</p></li>
+<li><p><em>logratio</em> - dividing by the mean of baseline values and taking the log</p></li>
+<li><p><em>percent</em> - subtracting the mean of baseline values followed by dividing by the mean of baseline values</p></li>
+<li><p><em>zscore</em> - subtracting the mean of baseline values and dividing by the standard deviation of baseline values</p></li>
+<li><p><em>zlogratio</em> - dividing by the mean of baseline values, taking the log, and dividing by the standard deviation of log baseline values</p></li>
+</ul>
+</li>
+<li><p>channel - Channel which TF should be ploted</p></li>
+<li><p>Plot TF of channel - If this check box is checked, the Time-Frequency of channel will be displayed after pressing <em>Show plot</em>.</p></li>
+<li><p>Plot topography - If this check box is checked, the topography will be displayed after pressing <em>Show plot</em>.</p></li>
+<li><p>Save button - Saves changes</p></li>
+<li><p>Show plot button - Button for showing plots.</p></li>
+</ol>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img alt="../_images/exa11work.png" src="../_images/exa11work.png" /></p>
+<p><img alt="../_images/exa11plot1.png" src="../_images/exa11plot1.png" /></p>
+<p><img alt="../_images/exa11plot2.png" src="../_images/exa11plot2.png" /></p>
+<p>Where <strong>Figure 1</strong> is <em>TF of channel</em> and <strong>Figure 2</strong> is <em>topography</em>.</p>
+<p>More information about <a class="reference external" href="https://mne.tools/0.17/generated/mne.time_frequency.AverageTFR.html#mne.time_frequency.AverageTFR.plot">plot TF of channel</a> and <a class="reference external" href="https://mne.tools/0.17/generated/mne.time_frequency.AverageTFR.html#mne.time_frequency.AverageTFR.plot_topo">plot topography</a>.
+Information about container for Time-Frequency data <a class="reference external" href="https://mne.tools/0.17/generated/mne.time_frequency.AverageTFR.html">here</a>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Time Frequency Maps</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="SVC.html"
+                        title="previous chapter">Support Vector Classification</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="WelchPSD.html"
+                        title="next chapter">Welch PSD</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/TimeFreqMaps.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="WelchPSD.html" title="Welch PSD"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="SVC.html" title="Support Vector Classification"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Pavel Průcha.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+    </div>
+  </body>
+</html>

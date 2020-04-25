@@ -40,16 +40,28 @@
             
   <div class="section" id="channel-selector">
 <h1>Channel Selector<a class="headerlink" href="#channel-selector" title="Permalink to this headline">¶</a></h1>
-<p>short description</p>
-<div class="section" id="inputs">
-<h2><strong>Inputs</strong><a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<p>Selects certain channels, specified by the user through GUI, from the EEG data, that this widget receives as an input.</p>
+<p><strong>Inputs</strong></p>
 <ul class="simple">
-<li></li>
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw">Raw</a></p></li>
 </ul>
 <p><strong>Outputs</strong></p>
-</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw">Raw</a>: Raw with selected channels</p></li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/sele1.png" src="../_images/sele1.png" /></p>
+<ol class="simple">
+<li><p>Channel names - Channel names you want to select</p></li>
+<li><p>Add Button - Adds additional empty field for channel</p></li>
+<li><p>Remove Button - Removes last field for channel</p></li>
+<li><p>Save Button - Saves selected channels</p></li>
+</ol>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img alt="../_images/exa1work.png" src="../_images/exa1work.png" /></p>
+<p><img alt="../_images/exa1plot.png" src="../_images/exa1plot.png" /></p>
+<p>More information <a class="reference external" href="https://mne.tools/0.17/generated/mne.io.Raw.html#mne.io.Raw.drop_channels">here</a></p>
 </div>
 </div>
 
@@ -62,7 +74,6 @@
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Channel Selector</a><ul>
-<li><a class="reference internal" href="#inputs"><strong>Inputs</strong></a></li>
 <li><a class="reference internal" href="#example">Example</a></li>
 </ul>
 </li>

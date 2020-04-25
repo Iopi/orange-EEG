@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>PlotWelchPSD &#8212; Orange3-Eeg 1.0.0 documentation</title>
+    <title>Plot Welch PSD &#8212; Orange3-Eeg 1.0.0 documentation</title>
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -15,7 +15,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Resample" href="Resample.html" />
-    <link rel="prev" title="LSL Data Receiver" href="lsldatareceiver.html" /> 
+    <link rel="prev" title="PlotICA" href="PlotICA.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -27,7 +27,7 @@
           <a href="Resample.html" title="Resample"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="lsldatareceiver.html" title="LSL Data Receiver"
+          <a href="PlotICA.html" title="PlotICA"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>
@@ -38,18 +38,30 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="plotwelchpsd">
-<h1>PlotWelchPSD<a class="headerlink" href="#plotwelchpsd" title="Permalink to this headline">¶</a></h1>
-<p>short description</p>
-<div class="section" id="inputs">
-<h2><strong>Inputs</strong><a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="plot-welch-psd">
+<h1>Plot Welch PSD<a class="headerlink" href="#plot-welch-psd" title="Permalink to this headline">¶</a></h1>
+<p>Plot the power spectral density across channels.</p>
+<p><strong>Inputs</strong></p>
 <ul class="simple">
-<li></li>
+<li><p>(psds, freqs)</p>
+<ul>
+<li><p>psds - The power spectral densities.</p></li>
+<li><p>freqs - The frequencies.</p></li>
 </ul>
-<p><strong>Outputs</strong></p>
-</div>
+</li>
+</ul>
+<p><strong>Use</strong></p>
+<p><img alt="../_images/plotwelch1.png" src="../_images/plotwelch1.png" /></p>
+<p>Press the <em>Show plot</em> button to display the graph.</p>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img alt="../_images/exa8work.png" src="../_images/exa8work.png" /></p>
+<p><img alt="../_images/exa8plot.png" src="../_images/exa8plot.png" /></p>
+<p>More information <a class="reference external" href="https://mne.tools/0.17/generated/mne.time_frequency.psd_welch.html">here</a>.</p>
+<div class="section" id="related-widgets">
+<h3>Related widgets<a class="headerlink" href="#related-widgets" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="WelchPSD.html"><span class="doc">Welsch PSD</span></a></p>
+</div>
 </div>
 </div>
 
@@ -61,16 +73,18 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">PlotWelchPSD</a><ul>
-<li><a class="reference internal" href="#inputs"><strong>Inputs</strong></a></li>
-<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#">Plot Welch PSD</a><ul>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#related-widgets">Related widgets</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="lsldatareceiver.html"
-                        title="previous chapter">LSL Data Receiver</a></p>
+  <p class="topless"><a href="PlotICA.html"
+                        title="previous chapter">PlotICA</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="Resample.html"
                         title="next chapter">Resample</a></p>
@@ -105,7 +119,7 @@
           <a href="Resample.html" title="Resample"
              >next</a> |</li>
         <li class="right" >
-          <a href="lsldatareceiver.html" title="LSL Data Receiver"
+          <a href="PlotICA.html" title="PlotICA"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>

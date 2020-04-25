@@ -14,8 +14,8 @@
     <script src="../_static/language_data.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Welch PSD" href="WelchPSD.html" />
-    <link rel="prev" title="Resample" href="Resample.html" /> 
+    <link rel="next" title="Time Frequency Maps" href="TimeFreqMaps.html" />
+    <link rel="prev" title="Straighten" href="Straighten.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -24,10 +24,10 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="WelchPSD.html" title="Welch PSD"
+          <a href="TimeFreqMaps.html" title="Time Frequency Maps"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="Resample.html" title="Resample"
+          <a href="Straighten.html" title="Straighten"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>
@@ -40,16 +40,45 @@
             
   <div class="section" id="support-vector-classification">
 <h1>Support Vector Classification<a class="headerlink" href="#support-vector-classification" title="Permalink to this headline">¶</a></h1>
-<p>short description</p>
-<div class="section" id="inputs">
-<h2><strong>Inputs</strong><a class="headerlink" href="#inputs" title="Permalink to this headline">¶</a></h2>
+<p>C-Support Vector Classification</p>
+<p><strong>Inputs</strong></p>
 <ul class="simple">
-<li></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html">numpy.ndarray</a>: Training data</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html">numpy.ndarray</a>: Labels of training data</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html">numpy.ndarray</a>: Target data</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.html">numpy.ndarray</a>: Labels of target data</p></li>
 </ul>
-<p><strong>Outputs</strong></p>
-</div>
+<p><strong>Outputs</strong>
+If classification is binary:</p>
+<ul class="simple">
+<li><p><em>float</em>: accuracy</p></li>
+<li><p><em>float</em>: recall</p></li>
+<li><p><em>float</em>: precision</p></li>
+</ul>
+<p>If classification is multi-class:</p>
+<ul class="simple">
+<li><p><em>float</em>: accuracy</p></li>
+</ul>
+<p><img alt="../_images/svc1.png" src="../_images/svc1.png" /></p>
+<ol class="simple">
+<li><p>Results - Here are displayed results:</p>
+<ul class="simple">
+<li><p>accuracy, recall and precision in binary classification</p></li>
+<li><p>accuracy in multi-class classification</p></li>
+</ul>
+</li>
+<li><p>Random state - The seed of the pseudo random number generator to use when shuffling the data for the dual coordinate descent.</p></li>
+<li><p>Max iter - The maximum number of iterations to be run.</p></li>
+</ol>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p><img alt="../_images/exa12work.png" src="../_images/exa12work.png" /></p>
+<p><img alt="../_images/exa12plot.png" src="../_images/exa12plot.png" /></p>
+<p>More information <a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html">here</a></p>
+<div class="section" id="related-widgets">
+<h3>Related widgets<a class="headerlink" href="#related-widgets" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference internal" href="LDA.html"><span class="doc">EEG Marker</span></a></p>
+</div>
 </div>
 </div>
 
@@ -62,18 +91,20 @@
   <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Support Vector Classification</a><ul>
-<li><a class="reference internal" href="#inputs"><strong>Inputs</strong></a></li>
-<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#example">Example</a><ul>
+<li><a class="reference internal" href="#related-widgets">Related widgets</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="Resample.html"
-                        title="previous chapter">Resample</a></p>
+  <p class="topless"><a href="Straighten.html"
+                        title="previous chapter">Straighten</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="WelchPSD.html"
-                        title="next chapter">Welch PSD</a></p>
+  <p class="topless"><a href="TimeFreqMaps.html"
+                        title="next chapter">Time Frequency Maps</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -102,10 +133,10 @@
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="WelchPSD.html" title="Welch PSD"
+          <a href="TimeFreqMaps.html" title="Time Frequency Maps"
              >next</a> |</li>
         <li class="right" >
-          <a href="Resample.html" title="Resample"
+          <a href="Straighten.html" title="Straighten"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Orange3-Eeg 1.0.0 documentation</a> &#187;</li> 
       </ul>
