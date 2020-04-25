@@ -39,4 +39,4 @@ More information [here](https://scikit-learn.org/stable/modules/generated/sklear
 
 #### Related widgets
 
-[EEG Marker](LDA.md)
+[Linear Discriminant Analysis](LDA.md)

@@ -23,7 +23,7 @@ Firstly install Orange3 version 3.23.1. The process can be found here - [Orange3
 ### Install Orange3-Eeg add-on
 After successfully installing Orange3, you can install the Orange3-Eeg add-on package.
 
-1. Download this projec from git and extract where you want it to be.
+1. Download this project from git and extract where you want it to be.
 
 2. Go to main folder of project
 

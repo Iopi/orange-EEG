@@ -49,4 +49,4 @@ More information [here](https://scikit-learn.org/stable/modules/generated/sklear
 
 #### Related widgets
 
-[EEG Marker](SVC.md)
+[Support Vector Classification](SVC.md)
