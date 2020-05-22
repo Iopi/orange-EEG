@@ -11,7 +11,7 @@ Orange3-Eeg
 [![pylsl](https://img.shields.io/badge/pylsl--blue.svg)](https://pypi.org/project/pylsl/)
 [![PyWavelets](https://img.shields.io/badge/pywt--blue.svg)](https://pywavelets.readthedocs.io/en/latest/install.html)
 
-Orange add-on containing widgets that work with EEG data"
+Orange add-on containing widgets that work with EEG data
 
 Package documentation: https://orange3-eeg.readthedocs.io/en/latest/
 

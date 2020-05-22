@@ -28,7 +28,3 @@ Example
 ![](images/exa9work.png)
 
 ![](images/exa9plot.png)
-
-#### Related widgets
-
-[EEG Marker](eegmarker.md)

@@ -10,10 +10,10 @@ from PyQt5.QtWidgets import QGridLayout, QLineEdit, QHBoxLayout, QPushButton, QL
 from orangecontrib.eeg.utils import style
 
 
-class OWAveragingTimeWindow(OWWidget):
+class OWAveragingTimeWindows(OWWidget):
 	"""Orange widget that computes arithmetic mean in defined time areas."""
 
-	name = "Averaging Time Window"
+	name = "Averaging Time Windows"
 	description = "Computes arithmetic mean in defined time areas."
 
 	icon = "icons/icon_avetimewin.svg"
@@ -199,4 +199,4 @@ class OWAveragingTimeWindow(OWWidget):
 		self.Outputs.data.send(self.resultArray)
 
 if __name__ == "__main__":
-	WidgetPreview(OWAveragingTimeWindow).run()
+	WidgetPreview(OWAveragingTimeWindows).run()

@@ -38,7 +38,6 @@ class OWEpochsLabeling(OWWidget):
 	def __init__(self):
 		super().__init__()
 		self.epochs = None
-
 		self.default_classes = ["S 1,S 2", "S 3"]
 		self.fields = [style.create_field(self.default_classes[i]) for i in range(len(self.default_classes))]
 		self.selected_classes = self.default_classes
@@ -147,6 +146,8 @@ class OWEpochsLabeling(OWWidget):
 	def get_labels(self):
 		classes = []
 		markers_id = []
+
+		#self.epochs.drop_channels(("STI 014",))
 		
 		i = 1
 		for unique_class in self.selected_classes:
@@ -172,10 +173,13 @@ class OWEpochsLabeling(OWWidget):
 					labels_of_epochs[i] = class_id
 
 		self.labels = numpy.zeros(len(self.epochs) * len(self.epochs.get_data()[0]))
-
 		for ch in range(len(self.epochs.get_data()[0])):
 			for e in range(len(self.epochs)):
 				self.labels[e+ch*(len(self.epochs))] = labels_of_epochs[e]
+
+		# self.labels = None
+		# self.labels = labels_of_epochs
+
 
 	@Inputs.epochs
 	def set_input_epochs(self, input_epochs):

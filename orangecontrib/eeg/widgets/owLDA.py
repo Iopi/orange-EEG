@@ -178,7 +178,9 @@ class OWLDA(OWWidget):
 			self.recall = self.count_recall(tp, tn, fp, fn)
 			self.accuracy = self.count_accuracy(tp, tn, fp, fn)
 
-			self.marker_info.setText("precision - " + str(self.precision) + "\nrecall - " + str(self.recall) + "\naccuracy - " + str(self.accuracy))
+			self.marker_info.setText("precision - " + str(self.precision) + "\nrecall - " +
+			str(self.recall) + "\naccuracy - " + str(self.accuracy) + "\ntrue positive - " + str(tp) + 
+			"\ntrue negative - " + str(tn) + "\nfalse positive - " + str(fp) + "\nfalse negative - " + str(fn))
 
 	def count_precision(self, tp, tn, fp, fn):
 		return tp / (tp + fp)

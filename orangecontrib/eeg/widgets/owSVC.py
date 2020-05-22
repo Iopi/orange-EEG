@@ -2,6 +2,9 @@ import mne
 import numpy
 import pywt
 from sklearn import svm
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
 from Orange.widgets import gui
 from Orange.widgets.utils.widgetpreview import WidgetPreview
 from Orange.widgets.widget import OWWidget, Input, Output, Msg
@@ -117,9 +120,9 @@ class OWSVC(OWWidget):
 		
 		self.gained_y_test = None
 		if self.X_train is not None and self.y_train is not None and self.X_test is not None and self.y_test is not None:
-			svcObj = svm.LinearSVC(random_state=self.random_state, max_iter=self.max_iter)
+			svcObj = svm.LinearSVC(random_state=self.random_state, tol=1e-5, max_iter=self.max_iter)
 			svcObj.fit(self.X_train, self.y_train)
-			self.gained_y_test = svcObj.predict(self.X_test)	
+			self.gained_y_test = svcObj.predict(self.X_test)
 
 		if len(numpy.unique(self.y_test)) == 2:
 			self.binary_classification()
@@ -168,7 +171,10 @@ class OWSVC(OWWidget):
 			self.recall = self.count_recall(tp, tn, fp, fn)
 			self.accuracy = self.count_accuracy(tp, tn, fp, fn)
 
-			self.marker_info.setText("precision - " + str(self.precision) + "\nrecall - " + str(self.recall) + "\naccuracy - " + str(self.accuracy))
+			self.marker_info.setText("precision - " + str(self.precision) + "\nrecall - " + 
+			str(self.recall) + "\naccuracy - " + str(self.accuracy) + "\ntrue positive - " + str(tp) + 
+			"\ntrue negative - " + str(tn) + "\nfalse positive - " + str(fp) + "\nfalse negative - " + str(fn))
+
 
 	def count_precision(self, tp, tn, fp, fn):
 		return tp / (tp + fp)
